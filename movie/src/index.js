@@ -8,9 +8,7 @@ ReactDOM.render(
     <AppRouter />
   </React.StrictMode>,
   document.getElementById('root')
+
 );
-
-
-
 
 

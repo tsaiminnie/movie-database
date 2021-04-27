@@ -11,7 +11,6 @@ function AppRouter() {
       </div>
     </Router>
    
-    );
 }
 
 export default AppRouter;
