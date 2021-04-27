@@ -2,6 +2,8 @@
 
 h1 {
     color: $gold;
-    font: $pageFont;
-    font-size: 2rem;
+    font-family: $pageFont;
+    font-size: 10vw;
+    position: absolute;
+    top: 10rem;
 }
