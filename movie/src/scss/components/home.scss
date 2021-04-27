@@ -1,0 +1,7 @@
+@use '../base/settings' as *;
+
+h1 {
+    color: $gold;
+    font: $pageFont;
+    font-size: 2rem;
+}
