@@ -4,7 +4,7 @@ import PageHome from '../pages/PageHome';
 
 function AppRouter() {
     return (
-        <div className="wrapepr">
+        <div className="wrapper">
             <Header></Header>
             <PageHome></PageHome>
             <Footer></Footer>

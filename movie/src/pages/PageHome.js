@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { pageTitle } from '../globals/globals';
+import ResponsiveBg from '../components/ResponsiveBg';
 
 const PageHome = () => {
 
@@ -9,6 +10,7 @@ const PageHome = () => {
 
     return (
         <main>
+            <ResponsiveBg />
             <section className='title'>
                 <h1>DiscoveryFlix</h1>
             </section>
