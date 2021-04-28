@@ -1,0 +1,14 @@
+@use '../base/settings' as *;
+
+.sort {
+
+    select {
+    height: 3rem;
+    border: 2px solid $gold;
+    background-color: black;
+    color: $gold;
+    font-size: 2rem;
+    font-family: $pageFont;
+    text-transform: uppercase;
+    }
+}
