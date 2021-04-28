@@ -30,7 +30,7 @@ const Header = () => {
             <div className={ navOpen ? "hamburger-menu animate" : "hamburger-menu"}></div>	  
             </div>
 
-        <Nav handleShowHideNav={showHideNav} />
+        <Nav handleShowHideNav={showHideNav} navOpen={navOpen} />
     </header>
 
     
