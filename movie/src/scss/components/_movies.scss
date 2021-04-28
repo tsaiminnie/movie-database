@@ -1,25 +1,22 @@
-select {
-    height: 3rem;
-    border: #C4B28C;
-    background-color: black;
-    color: #C4B28C;
-    font-size: 2rem;
-    font-family: 'Lato';
-    text-transform: uppercase;
+@use '../base/settings' as *;
+
+.movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .movie {
-    width: 250px;
+    flex: 0 0 250px;
     height: 365px;
-    border: 2px solid white;
     margin: 2rem auto;
-    padding: 0;
+    
 }
 
 .bar {
-    border: 1px solid #C4B28C;
-    background-color: #C4B28C;
-    width: 200px;
+    border: 1px solid $gold;
+    background-color: $gold;
+    flex: 0 0 175px;
     height: 1px;
-    margin: 0 auto;
+    margin-top: 1.75rem;
 }
