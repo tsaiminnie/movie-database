@@ -1,0 +1,22 @@
+@use '../base/settings' as *;
+
+.movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movie {
+    flex: 0 0 250px;
+    height: 365px;
+    margin: 2rem auto;
+    
+}
+
+.bar {
+    border: 1px solid $gold;
+    background-color: $gold;
+    flex: 0 0 175px;
+    height: 1px;
+    margin-top: 1.75rem;
+}

@@ -1,0 +1,17 @@
+.hero-image {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+
+}
+
+main {
+    overflow-x: hidden;
+}
+
+@media (min-width: 320px){
+    .hero-image {
+        object-position: left bottom;
+    }
+}

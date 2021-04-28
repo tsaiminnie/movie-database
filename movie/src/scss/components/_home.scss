@@ -1,0 +1,66 @@
+@use '../base/settings' as *;
+
+.title {
+    color: black;
+    font-family: $pageFont;
+    font-size: 10vw;
+    position: absolute;
+    left: 4rem;
+    bottom: 5rem;
+}
+
+.slogan {
+    display: none;
+    color: $gold;
+    font-family: $pageFont;
+    font-size: 2rem;
+    position: absolute;
+    left: 4rem;
+    top: 25rem;
+
+    h2{
+        margin: 1rem auto;
+    }
+}
+
+.login-btn {
+    background-color: black;
+    border: none;
+    position: absolute;
+    left: 2rem;
+    bottom: 8rem;
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 1rem;
+    p {
+        font-family: $pageFont;
+        font-size: 1rem;
+        color: $gold;
+    }
+}
+
+
+
+@media (min-width: 500px){
+    .login-btn {
+        display: none;
+    }
+
+    .slogan {
+        display: block;
+    }
+}
+
+@media (min-width: 600px){
+    .title {
+        color: $gold;
+        top: 10rem;
+    }
+}
+
+@media (min-width: 800px){
+    .title {
+        h1 {
+        text-align: right;
+        }
+    }
+}

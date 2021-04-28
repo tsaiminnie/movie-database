@@ -1,4 +1,5 @@
 
+
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
@@ -18,9 +19,9 @@ function AppRouter() {
       <Route path="/sign-in"><PageLogin/></Route>
                   
       </Switch>
-      </div>
+        </div>
     </Router>
-    )  
-}
+   
+    )}
 
 export default AppRouter;
