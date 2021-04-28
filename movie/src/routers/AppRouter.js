@@ -7,7 +7,6 @@ function AppRouter() {
     return (
     <Router>
         <div className="wrapper">
-          <Header />
           <PageHome />
           
       </div>

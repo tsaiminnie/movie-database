@@ -4,6 +4,7 @@ import ResponsiveBg from '../components/ResponsiveBg';
 import Header from '../components/Header';
 import Movies from '../components/Movies';
 import SortBar from '../components/SortBar';
+import PageAbout from '../pages/PageAbout';
 
 const PageHome = () => {
 
@@ -20,6 +21,7 @@ const PageHome = () => {
             </section>
             <SortBar/>
             <Movies/>
+            <PageAbout/>
         </main>
     );
 };
