@@ -1,4 +1,4 @@
-
+import logo from '../images/logo.png';
 import {useState, useEffect} from 'react';
 import Nav from './Nav';
 
@@ -23,6 +23,7 @@ const Header = () => {
     return (
 
     <header className={navOpen ? 'show': 'closed'}>
+                    <img className="logo" alt='logo' src={logo}></img>
     
         <div className="menu-wrapper"
            onMouseDown={(e) => { e.preventDefault(); }}

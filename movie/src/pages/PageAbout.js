@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import { pageTitle } from '../globals/globals';
-import Header from '../components/Header';
-import logo from '../images/logo.png';
 
 const PageAbout = () => {
 
@@ -11,8 +9,6 @@ const PageAbout = () => {
 
     return (
         <section className="about-page">
-            <img className="logo" alt='logo' src={logo}></img>
-            <Header/>
 
             <h1>About</h1> 
             <h2>Hello!</h2>
