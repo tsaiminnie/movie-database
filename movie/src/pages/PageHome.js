@@ -36,8 +36,7 @@ const PageHome = ({sort}) => {
     }, [sort]);
 
     return (
-        <main>
-            <Header/>
+        <section>
             <ResponsiveBg />
             <LoginBtn />
             <section className='title'>
@@ -51,7 +50,7 @@ const PageHome = ({sort}) => {
             <BgArrow />
             <SortBar/>
             {moviesData != null && <Movies moviesData={moviesData} />}
-        </main>
+        </section>
     );
 };
 

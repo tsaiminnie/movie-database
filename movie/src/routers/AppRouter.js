@@ -1,4 +1,5 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Header from '../components/Header';
 import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
 import PageFav from '../pages/PageFav';
@@ -8,6 +9,8 @@ import PageLogin from '../pages/PageLogin';
 function AppRouter() {
     return (
     <Router>
+      <Header/>
+      <main>
         <div className="wrapper"> 
           <Switch>
             <Route path ="/" exact><PageHome/></Route>
@@ -17,6 +20,7 @@ function AppRouter() {
             <Route path="/sign-in"><PageLogin/></Route>           
           </Switch>
         </div>
+      </main>
     </Router>
    
     )}
