@@ -1,40 +1,53 @@
-import tenet from '../images/tenet.jpg';
+import MovieCard from './MovieCard';
 
-function Movies() {
+function Movies({ moviesData }) {
 
     return (
         <section className='movies'>
-            <div className='movie'>
-                <img src={tenet}></img>
-                    <div className='bar'></div>
-            </div>
-            <div className='movie'>
-                <img src={tenet}></img>
-                    <div className='bar'></div>
-            </div>
-            <div className='movie'>
-                <img src={tenet}></img>
-                    <div className='bar'></div>
-            </div>
-            <div className='movie'>
-                <img src={tenet}></img>
-                    <div className='bar'></div>
-            </div>
-            <div className='movie'>
-                <img src={tenet}></img>
-                    <div className='bar'></div>
-            </div>
-            <div className='movie'>
-                <img src={tenet}></img>
-                    <div className='bar'></div>
-            </div>
-                
-                
+            {moviesData.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
         </section>
     );
 }
 
 export default Movies;
+
+// import tenet from '../images/tenet.jpg';
+
+// function Movies() {
+
+//     return (
+//         <section className='movies'>
+//             <div className='movie'>
+//                 <img src={tenet}></img>
+//                     <div className='bar'></div>
+//             </div>
+//             <div className='movie'>
+//                 <img src={tenet}></img>
+//                     <div className='bar'></div>
+//             </div>
+//             <div className='movie'>
+//                 <img src={tenet}></img>
+//                     <div className='bar'></div>
+//             </div>
+//             <div className='movie'>
+//                 <img src={tenet}></img>
+//                     <div className='bar'></div>
+//             </div>
+//             <div className='movie'>
+//                 <img src={tenet}></img>
+//                     <div className='bar'></div>
+//             </div>
+//             <div className='movie'>
+//                 <img src={tenet}></img>
+//                     <div className='bar'></div>
+//             </div>
+                
+                
+//         </section>
+//     );
+// }
+
+// export default Movies;
 
 
 ///////This code below is starting to figure outhow to do the movies as obkects for when we have the dynamic data coming in....
