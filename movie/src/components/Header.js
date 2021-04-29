@@ -2,6 +2,7 @@
 import {useState, useEffect} from 'react';
 import Nav from './Nav';
 
+
 const Header = () => {
 
     const [navOpen, setNavOpen] = useState(false);
@@ -22,13 +23,15 @@ const Header = () => {
     return (
 
     <header className={navOpen ? 'show': 'closed'}>
-        
-           <div className="menu-wrapper"
+    
+        <div className="menu-wrapper"
            onMouseDown={(e) => { e.preventDefault(); }}
             onClick={showHideNav}>
            
             <div className={ navOpen ? "hamburger-menu animate" : "hamburger-menu"}></div>	  
             </div>
+    
+        
 
         <Nav handleShowHideNav={showHideNav} navOpen={navOpen} />
     </header>

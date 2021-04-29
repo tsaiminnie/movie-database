@@ -15,7 +15,7 @@ const Nav = ({handleShowHideNav, navOpen}) => {
                 <div className="menu-heading" >
                     Jane Doe
                 </div>
-                <div className="menu-body">
+                <nav className="menu-body">
                     <ul>
                     <li><NavLink to="/" exact>Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
@@ -24,7 +24,7 @@ const Nav = ({handleShowHideNav, navOpen}) => {
                     <li><NavLink to="/sign-in">Sign In</NavLink></li>
                 
                     </ul>
-                </div>
+                </nav>
                 </div>
 
                 <div class="overlay"></div>
