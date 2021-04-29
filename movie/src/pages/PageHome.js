@@ -5,8 +5,6 @@ import Header from '../components/Header';
 import Movies from '../components/Movies';
 import SortBar from '../components/SortBar';
 import LoginBtn from '../components/LoginBtn';
-import PageAbout from '../pages/PageAbout';
-
 
 const PageHome = () => {
 
@@ -29,7 +27,6 @@ const PageHome = () => {
             </section>
             <SortBar/>
             <Movies/>
-            <PageAbout/>
         </main>
     );
 };
