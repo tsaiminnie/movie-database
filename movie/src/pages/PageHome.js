@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Movies from '../components/Movies';
 import SortBar from '../components/SortBar';
 import LoginBtn from '../components/LoginBtn';
+import BgArrow from '../components/BgArrow';
 
 const PageHome = () => {
 
@@ -25,6 +26,7 @@ const PageHome = () => {
                 <h2>Dream</h2>
                 <h2>Imagine</h2>
             </section>
+            <BgArrow />
             <SortBar/>
             <Movies/>
         </main>
