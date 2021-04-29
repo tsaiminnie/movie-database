@@ -4,6 +4,11 @@ function MovieCard({movie}) {
     return (
         <div className="movie">
             <div className="poster">
+
+                <div className="hover-info">
+                    <p>Hello World</p>
+                </div>
+
                 {/* Add a check here to see if there is no poster*/}
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Godzilla vs Kong"></img>
             </div>

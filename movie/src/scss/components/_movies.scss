@@ -19,15 +19,29 @@
     }
 }
 
+
+
 @media (min-width: $mobile) {
+
         .movies {
             display: grid;
             grid-template-columns: repeat( auto-fit, 250px); 
             justify-content: center;
             gap: 1rem;
         }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 // @media (min-width: $tablet) {
 //     .movies {
@@ -49,3 +63,4 @@
 //     }
 
 // }
+

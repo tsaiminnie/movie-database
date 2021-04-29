@@ -9,7 +9,7 @@ function ResponsiveBg() {
 
 
     return (
-         <img className = 'hero-image' src={smallChaosWalking} srcSet={`${smallChaosWalking} 400w, ${mediumChaosWalking} 800w, ${largeChaosWalking} 1200w, ${xlargeChaosWalking} 1920w`} />
+         <img className = 'hero-image' alt='Chaos Walking Movie' src={smallChaosWalking} srcSet={`${smallChaosWalking} 400w, ${mediumChaosWalking} 800w, ${largeChaosWalking} 1200w, ${xlargeChaosWalking} 1920w`} />
     );
 }
 

@@ -11,7 +11,7 @@ const PageAbout = () => {
 
     return (
         <section className="about-page">
-            <img className="logo" src={logo}></img>
+            <img className="logo" alt='logo' src={logo}></img>
             <Header/>
 
             <h1>About</h1> 

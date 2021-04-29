@@ -7,10 +7,11 @@
 //Components
 @use './components/nav';
 @use './components/main-nav';
-@use './components/heroimage.scss';
+@use './components/heroimage';
 @use './components/movies';
 @use './components/sortBar';
 @use './components/about';
+@use './components/hoverinfo';
 
 //Utilities
 
