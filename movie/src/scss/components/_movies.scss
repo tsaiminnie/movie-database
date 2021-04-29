@@ -1,20 +1,28 @@
 @use '../base/settings' as *;
 
+
 .movies {
     border: 1px solid white;
+
     img {
         width: 100%;
     }
+
     .poster {
         margin: 0 auto;
         overflow: hidden;  
     }
+
     .movie {
         margin: 5rem auto;
         width: 250px;  
     }
 }
-@media (min-width: 500px) {
+
+
+
+@media (min-width: $mobile) {
+
         .movies {
             display: grid;
             grid-template-columns: repeat( auto-fit, 250px); 
@@ -30,4 +38,29 @@
 
 
 
+
+
+
+
+
+// @media (min-width: $tablet) {
+//     .movies {
+//         grid-template-columns: 1fr 1fr 1fr;
+//     }
+
+// }
+
+// @media (min-width: $tabletlg) {
+//     .movies {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+
+// }
+
+// @media (min-width: $desktop) {
+//     .movies {
+//         grid-template-columns: repeat(6, 1fr); 
+//     }
+
+// }
 
