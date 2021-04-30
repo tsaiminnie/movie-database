@@ -26,7 +26,7 @@ const PageHome = ({sort}) => {
         const moviesData = await res.json();
         const first12Movies = moviesData.results.splice(0,12);
         //console.log(moviesData);
-        console.log(first12Movies);
+        //console.log(first12Movies);
         setMoviesData(first12Movies);
       }
   
@@ -48,12 +48,9 @@ const PageHome = ({sort}) => {
                 <h2>Dream</h2>
                 <h2>Imagine</h2>
             </section>
-            <BgArrow />
-            <SortBar/>
-            {moviesData != null && <Movies 
-                                        // isFav={isFav(globalState.favs, null, movie.id)}
-                                        moviesData={moviesData} 
-                                    />}
+           {/*  <BgArrow />
+            <SortBar/> */}
+            {moviesData !== null && <Movies moviesData={moviesData} />}
         </section>
     );
 };

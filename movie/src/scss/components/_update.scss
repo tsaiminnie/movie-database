@@ -6,7 +6,7 @@
     background: rgba(66, 62, 62, 20);
 }
 
-.form-login {
+.form-signup {
     color: $gold;
     font-family: $pageFont;
     font-size: 2rem;
@@ -16,17 +16,18 @@
     bottom:0;
     position: absolute;
     text-align:center;
-    top:17rem;
+    top:20rem;
+    color:$gold;
     
     
 
     h1{
         margin: 1rem auto;
-        text-align:center
+        color:$gold;
     }
 }
 
-.group-name {
+.group-signup {
     color: $gold;
     font-family: $pageFont;
     font-size: 2rem;
@@ -36,7 +37,7 @@
     top:0;
     position: absolute;
     text-align:center;
-    top: 20rem;
+    top: 5rem;
     
 
     .username{
@@ -51,30 +52,12 @@
     }
 }
 
-.sign-up-account{
+
+.submit-signup{
     position:absolute;
-    top: 30rem;
-    left:0;
-    right:0;
-    bottom:0;
-    text-align:center;
-
-    a{
-        color:$gold;
-        font-size: 1rem;
-        text-align:center;
-    }
-    
-
-    
-}
-
-.submit{
-    position:absolute;
-    top: 27rem;
+    top: 10rem;
     left:0;
     right:0;
     bottom:0;
     text-align:center;
 }
-

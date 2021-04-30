@@ -6,10 +6,10 @@ import isFav from '../utilities/isFav';
 
 function Movies({moviesData}) {
 
-    const [globalState] = useGlobal();
-    // const globalActions = globalStateAndglobalActions[1];
+    const globals = useGlobal();
+    const globalState = globals[0];
 
-    
+    console.log(moviesData);
  
     return (
         <section className='movies'>
