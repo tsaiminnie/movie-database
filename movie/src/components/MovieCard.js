@@ -11,6 +11,7 @@ function MovieCard({movie, isFav}) {
         }   
     }
 
+
     function rating(){
         let rating = movie.vote_average;
         if (rating !== null){
@@ -34,6 +35,7 @@ function MovieCard({movie, isFav}) {
         <div className="movie">
             <div className="poster">
             
+
                 <div className="hover-info">
 
                 <div className='heartandrating'>
@@ -49,17 +51,12 @@ function MovieCard({movie, isFav}) {
                 <h3>{title()}</h3>
                 <p>{movie.release_date}</p>
                 <p>{overview()}</p>
-                <Link to='/'>More Info</Link>
+                <Link to={`/single-page/${movie.id}`}>More Info</Link>
                 </div>
 
                 {/* Add a check here to see if there is no poster*/}
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}></img>
             </div>
-            {/* <div className="info">
-                <h3>{movie.title}</h3> */}
-                {/* Not the correct location... for demo only */}
-                {/* <Link to='/'>More Info</Link>
-            </div> */}
             <div className='bar'></div>
         </div>
     )

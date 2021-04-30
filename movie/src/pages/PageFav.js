@@ -19,13 +19,10 @@ const PageFav = () => {
             <h2>Favourite Movies</h2>
             {globalState.favs.length < 1 ? <p>No favourite movies. Return to the <Link to="/">home</Link> page to add some!</p> : 
                     <div> 
-                        {/* Insert fav movies here */}
-                        <p>These are your favourite movies!!</p>
-
                         {globalState.favs.map((singleMovie, i) => {
-                return <MovieCard key={i} 
-                        movie={singleMovie}
-                        isFav={true} />
+                            return <MovieCard   key={i} 
+                                                movie={singleMovie}
+                                                isFav={true} />
                     })}
 				    </div>}
         </section>

@@ -1,0 +1,71 @@
+
+@use '../base/settings' as *;
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+.account-container{
+    background: rgba(66, 62, 62, 20);
+}
+
+.form-login {
+    color: $gold;
+    font-family: $pageFont;
+    font-size: 2rem;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+    position: absolute;
+    text-align:center;
+    top:17rem;
+    
+    
+
+    h1{
+        margin: 1rem auto;
+        text-align:center
+    }
+}
+
+.group-name {
+    color: $gold;
+    font-family: $pageFont;
+    font-size: 2rem;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    position: absolute;
+    text-align:center;
+    top: 20rem;
+    
+
+    .username{
+        margin: 1rem auto;
+        padding-left: 80px;
+        color:$gold;
+    }
+    .password{
+        margin: 1rem auto;
+        color:$gold;
+        
+    }
+}
+
+.sign-up-account{
+    position:absolute;
+    top: 30rem;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align:center;
+
+    a{
+        color:$gold;
+        font-size: 1rem;
+        text-align:center;
+    }
+    
+
+    
+}
+

@@ -141,7 +141,7 @@ body{
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
 
       /* navigation */
       .menu-wrapper {
@@ -161,6 +161,7 @@ body{
 
       .top-menu{
         z-index: 0;
+        
       }
 
       .menu-body{
@@ -179,19 +180,22 @@ body{
 
       .menu-bar.right {
         box-shadow: none;
+        top: 40px;
 
       }
-  
+      
+      .menu-body{
        ul {
           display: flex;
           flex: row;
-          width: 550px;  
+          width: 530px;  
       }
 
       li {
           flex: 1;
          
       }
+    }
   }
 
 
