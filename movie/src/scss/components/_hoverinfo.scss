@@ -16,6 +16,31 @@
         // top: 0;
         // left: 0;
         // display: none;
+
+        .heartandrating {
+            display: flex;
+            justify-content: space-between;
+
+            .heart {
+                width: 48px;
+                height: 48px; 
+                align-self: flex-end;
+                margin-right: 1rem;
+            }
+            
+            p{
+                border-radius: 50%;
+                background: white;
+                color:rgba(0, 0, 0, .8);
+                border: 3px solid #fff;
+                width: 42px;
+                line-height: 42px;
+                margin: 0;
+                order: -1;
+                margin-top: 1rem;
+                margin-left: 1rem;
+            }
+        }
     }
 
     &:hover .hover-info {
@@ -26,19 +51,15 @@
         display: block;
     }
 
-    .heart {
-        width: 48px;
-        height: 48px; 
-        align-self: flex-end;
-    }
+
 
     h3{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: bold;
     }
 
    h3, p {
-        margin: 1rem 1rem;
+        margin: 0.5rem 1rem;
         text-align: center;
         color: $gold;
     }
@@ -49,6 +70,10 @@
         text-transform: uppercase;
         display: flex;
         justify-content: center;
+
+        &:hover {
+            color: #A86244;
+        }
     }
 }
 
