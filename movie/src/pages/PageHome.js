@@ -16,7 +16,7 @@ const PageHome = ({sort}) => {
     useEffect(() => {
         const fetchMovies = async () => {
             //Can add sort feature in the url below :)
-        const res = await fetch(`https://api.themoviedb.org/3/movie/popular?language=en-US&page=1`, {
+        const res = await fetch(`https://api.themoviedb.org/3/movie/${sort}?language=en-US&page=1`, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
