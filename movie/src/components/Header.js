@@ -29,7 +29,7 @@ const Header = () => {
             onClick={showHideNav}>
            
             <div className={ navOpen ? "hamburger-menu animate" : "hamburger-menu"}></div>	  
-            </div>
+        </div>
     
         
 
