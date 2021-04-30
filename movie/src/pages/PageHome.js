@@ -37,7 +37,7 @@ const PageHome = ({sort}) => {
     }, [sort]);
 
     return (
-        <section>
+        <section className="home-section">
             <ResponsiveBg />
             <LoginBtn />
             <section className='title'>

@@ -1,7 +1,7 @@
 @use '../base/settings' as *;
 
-.poster {
-    // background-size: cover;
+.home-section .poster {
+    background-size: cover;
     transition: background-color 1s ease;
     position: relative;
 
@@ -95,3 +95,4 @@
 //     }
 // }
 // }
+
