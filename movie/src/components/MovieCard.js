@@ -10,7 +10,7 @@ function MovieCard({movie}) {
                 </div>
 
                 {/* Add a check here to see if there is no poster*/}
-                <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Godzilla vs Kong"></img>
+                <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}></img>
             </div>
             <div className="info">
                 <h3>{movie.title}</h3>

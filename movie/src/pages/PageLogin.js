@@ -10,10 +10,9 @@ const PageLogin = () => {
     }, []);
 
     return (
-        <main>
-            <Header/>
-            <ResponsiveBg />   
-        </main>
+        <section>
+            
+        </section>
     );
 };
 

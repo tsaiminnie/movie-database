@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { pageTitle } from '../globals/globals';
 import { API_TOKEN } from '../globals/globals';
 import ResponsiveBg from '../components/ResponsiveBg';
-import Header from '../components/Header';
+import useGlobal from '../globals/globalState';
+import isFav from '../utilities/isFav';
 import Movies from '../components/Movies';
 import SortBar from '../components/SortBar';
 import LoginBtn from '../components/LoginBtn';
@@ -49,7 +50,10 @@ const PageHome = ({sort}) => {
             </section>
             <BgArrow />
             <SortBar/>
-            {moviesData != null && <Movies moviesData={moviesData} />}
+            {moviesData != null && <Movies 
+                                        // isFav={isFav(globalState.favs, null, movie.id)}
+                                        moviesData={moviesData} 
+                                    />}
         </section>
     );
 };
