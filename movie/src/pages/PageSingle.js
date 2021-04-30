@@ -1,36 +1,55 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { pageTitle } from '../globals/globals';
-import { Link } from 'react-router-dom';
-import useGlobal from '../store/globalAppState';
-import Movies from '../components/Movies';
+import { useLocation, useParams, Link } from 'react-router-dom';
+import useGlobal from '../globals/globalState';
+import MovieCard from '../components/MovieCard';
 import isFav from '../utilities/isFav';
+import { API_TOKEN } from '../globals/globals';
 
 const PageSingle = () => {
 
-    const globalStateAndglobalActions = useGlobal();
-    const globalState = globalStateAndglobalActions[0];
-    let movieObj;
+    const [globalState] = useGlobal();
+
+    const { id } = useParams();
+
+    const [singleMovie, setSingleMovie] = useState(null);
 
     useEffect(() => {
 
-        if (!movieObj) {
-            document.title = `Single Page - ${pageTitle}`;
+        const fetchMovie = async () => {
+        const res = await fetch(`https://api.themoviedb.org/3/movie/${id}`, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + API_TOKEN
+              }
+        });
+        const movieData = await res.json();
+        if(movieData.hasOwnProperty("success")){
+            setSingleMovie(false);
         } else {
-            document.title = `${movie.title} - ${pageTitle}`;
+            setSingleMovie(movieData);
         }
+        console.log(movieData);
+      }
+  
+      fetchMovie();
         
-    }, [movieObj]);
+    }, [id]);
 
     return (
         <section className="single-page">
-            <h2>Single Page: {movie.title}</h2>
-                {!movieObj ? 
-                    <p>Movie not found. <Link to="/">Return to home page</Link>.</p> :
-                    <div className="kitten-single">
-                        <Movies movieObj={movieObj} 
-                                isFav={isFav(globalState.favs, null, movieObj.id)} />
-                    </div>
-                }
+
+            {singleMovie === false && <p>Movie not found. <Link to="/">Return to home page</Link>.</p>}
+
+            {singleMovie && <div className="singleMovie">
+     
+                    <MovieCard  movie={singleMovie} 
+                                isFav={isFav(globalState.favs, null, singleMovie.id)}
+                                trimOverview={false}/>
+                            </div> }
+                      
+                
         </section>
     );
 };

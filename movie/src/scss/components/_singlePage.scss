@@ -1,0 +1,81 @@
+@use '../base/settings' as *;
+
+.single-page {
+
+    h3 {
+        color: $gold;
+        font-size: 2rem;
+    }
+
+    p {
+        color: white;
+        max-width: 90%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .heart {
+        width: 48px;
+        height: 48px; 
+    }
+
+    .link {
+        display: none;
+    }
+
+}
+
+
+// .poster {
+//     background-size: cover;
+//     transition: background-color 1s ease;
+//     position: relative;
+
+//     .hover-info {
+//         background: rgba(0, 0, 0, .8);
+//         content: '';
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         // top: 0;
+//         // left: 0;
+//         // display: none;
+//     }
+
+//     &:hover .hover-info {
+//         display: flex;
+//     }
+
+//     img {
+//         display: block;
+//     }
+
+//     .heart {
+//         width: 48px;
+//         height: 48px; 
+//         align-self: flex-end;
+//     }
+
+//     h3{
+//         font-size: 1.5rem;
+//         font-weight: bold;
+//     }
+
+//    h3, p {
+//         margin: 1rem 1rem;
+//         text-align: center;
+//         color: $gold;
+//     }
+
+//     a {
+//         color: white;
+//         text-decoration: none;
+//         text-transform: uppercase;
+//         display: flex;
+//         justify-content: center;
+//     }
+// }

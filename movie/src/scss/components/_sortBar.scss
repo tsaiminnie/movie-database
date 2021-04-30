@@ -1,14 +1,27 @@
 @use '../base/settings' as *;
 
 .sort {
+    text-align: center;
+    margin: 2rem;
 
     select {
     height: 3rem;
     border: 2px solid $gold;
     background-color: black;
     color: $gold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: $pageFont;
     text-transform: uppercase;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        background-color: rgba(white, 0.3);
+    }
+
     }
 }
