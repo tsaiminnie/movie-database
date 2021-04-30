@@ -43,9 +43,10 @@ const PageSingle = () => {
             {singleMovie === false && <p>Movie not found. <Link to="/">Return to home page</Link>.</p>}
 
             {singleMovie && <div className="singleMovie">
-                <h2>{`Single Page: ${singleMovie.title}`}</h2>
+     
                     <MovieCard  movie={singleMovie} 
-                                isFav={isFav(globalState.favs, null, singleMovie.id)} />
+                                isFav={isFav(globalState.favs, null, singleMovie.id)}
+                                trimOverview={false}/>
                             </div> }
                       
                 

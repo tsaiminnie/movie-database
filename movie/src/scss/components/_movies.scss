@@ -1,7 +1,7 @@
 @use '../base/settings' as *;
 
 
-.movies {
+.home-section .movies {
     border: 1px solid white;
 
     img {
@@ -23,7 +23,7 @@
 
 @media (min-width: $mobile) {
 
-        .movies {
+       .home-section .movies {
             display: grid;
             grid-template-columns: repeat( auto-fit, 200px); 
             justify-content: center;
@@ -37,7 +37,7 @@
 
 @media (min-width: $tablet) {
 
-    .movies {
+   .home-section .movies {
         display: grid;
         grid-template-columns: repeat( auto-fit, 180px); 
         justify-content: center;
@@ -51,7 +51,7 @@
 
 @media (min-width: $desktop) {
 
-    .movies {
+   .home-section .movies {
         display: grid;
         grid-template-columns: repeat( auto-fit, 160px); 
         justify-content: center;
