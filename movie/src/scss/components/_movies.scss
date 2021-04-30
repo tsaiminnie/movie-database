@@ -25,14 +25,60 @@
 
         .movies {
             display: grid;
-            grid-template-columns: repeat( auto-fit, 250px); 
+            grid-template-columns: repeat( auto-fit, 200px); 
             justify-content: center;
             gap: 1rem;
+
+            .movie {
+                width: 200px;
+            }
         }
+}
+
+@media (min-width: $tablet) {
+
+    .movies {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, 180px); 
+        justify-content: center;
+        gap: 1rem;
+
+        .movie {
+            width: 180px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+
+    .movies {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, 160px); 
+        justify-content: center;
+        gap: 1rem;
+
+        .movie {
+            width: 160px;
+        }
+    }
 }
 
 
 
+
+//Playing around with having a scroll for the movies
+// @media (min-width: $desktop) {
+//     .movies {
+//         display: flex;
+//         overflow-x: auto;
+//         flex-wrap: nowrap;
+
+//         img{
+//             width: 300px;
+//         }
+//     }
+
+// }
 
 
 
@@ -57,10 +103,5 @@
 
 // }
 
-// @media (min-width: $desktop) {
-//     .movies {
-//         grid-template-columns: repeat(6, 1fr); 
-//     }
 
-// }
 

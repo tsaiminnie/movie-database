@@ -1,11 +1,11 @@
-function FavBtn({ movieObj, remove, isFavClicked }) {
+function FavBtn({ movie, remove, handleFavClick }) {
 
     function addFav(){
-        isFavClicked(true, movieObj);
+        handleFavClick(true, movie);
     }
 
     function removeFav(){
-        isFavClicked(false, movieObj);
+        handleFavClick(false, movie);
     }
 
     return (
@@ -16,7 +16,6 @@ function FavBtn({ movieObj, remove, isFavClicked }) {
             <button onClick={removeFav}>Remove From Favs</button>}
         </>
     );
-    
 }
 
 FavBtn.defaultProps = {
