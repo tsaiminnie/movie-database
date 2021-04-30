@@ -50,10 +50,7 @@ const PageHome = ({sort}) => {
             </section>
             <BgArrow />
             <SortBar/>
-            {moviesData != null && <Movies 
-                                        // isFav={isFav(globalState.favs, null, movie.id)}
-                                        moviesData={moviesData} 
-                                    />}
+            {moviesData !== null && <Movies moviesData={moviesData} />}
         </section>
     );
 };

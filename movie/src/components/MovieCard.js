@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-// import emptyHeart from '../images/emptyheart48.png';
-import filledHeart from '../images/filledheart48.png';
-import { useState } from 'react';
 import FavBtn from './FavBtn';
 
 function MovieCard({movie, isFav}) {
@@ -14,16 +11,10 @@ function MovieCard({movie, isFav}) {
         }   
     }
 
-    // const {heart, setHeart} = useState(null);
-
     return (
         <div className="movie">
             <div className="poster">
 
-            {/* {isFav &&   <div className="heart">
-                            <img src={filledHeart}/>
-                        </div> } */}
-            
                 <div className="hover-info">
 
                 <div>
@@ -35,17 +26,12 @@ function MovieCard({movie, isFav}) {
                 <h3>{movie.title}</h3>
                 <p>{movie.release_date}</p>
                 <p>{overview()}</p>
-                <Link to='/'>More Info</Link>
+                <Link to={`/single-page/${movie.id}`}>More Info</Link>
                 </div>
 
                 {/* Add a check here to see if there is no poster*/}
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}></img>
             </div>
-            {/* <div className="info">
-                <h3>{movie.title}</h3> */}
-                {/* Not the correct location... for demo only */}
-                {/* <Link to='/'>More Info</Link>
-            </div> */}
             <div className='bar'></div>
         </div>
     )
