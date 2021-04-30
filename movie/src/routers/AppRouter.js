@@ -15,7 +15,11 @@ function AppRouter() {
       <main>
         <div className="wrapper"> 
           <Switch>
-            <Route path ="/" exact><PageHome/></Route>
+            <Route path ="/" exact><PageHome sort='popular'/></Route>
+            <Route path ="/sort/popular" exact><PageHome sort='popular'/></Route>
+            <Route path ="/sort/top-rated" exact><PageHome sort='top_rated'/></Route>
+            <Route path ="/sort/now-playing" exact><PageHome sort='now_playing'/></Route>
+            <Route path ="/sort/upcoming" exact><PageHome sort='upcoming'/></Route>
             <Route path="/about"><PageAbout/></Route>
             <Route path="/favourites"><PageFav/></Route>
             <Route path="/my-account"><PageAccount/></Route>
