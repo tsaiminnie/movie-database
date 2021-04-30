@@ -3,6 +3,7 @@ import { pageTitle } from '../globals/globals';
 import { Link } from 'react-router-dom';
 import useGlobal from '../globals/globalState';
 import Movies from '../components/Movies';
+import MovieCard from '../components/MovieCard';
 
 const PageFav = () => {
 
@@ -20,6 +21,12 @@ const PageFav = () => {
                     <div> 
                         {/* Insert fav movies here */}
                         <p>These are your favourite movies!!</p>
+
+                        {globalState.favs.map((singleMovie, i) => {
+                return <MovieCard key={i} 
+                        movie={singleMovie}
+                        isFav={true} />
+                    })}
 				    </div>}
         </section>
     );

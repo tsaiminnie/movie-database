@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import emptyHeart from '../images/emptyheart48.png';
+// import emptyHeart from '../images/emptyheart48.png';
 import filledHeart from '../images/filledheart48.png';
 import { useState } from 'react';
+import FavBtn from './FavBtn';
 
-function MovieCard({movie}) {
+function MovieCard({movie, isFav}) {
 
     function overview(){
        let str = movie.overview;
@@ -13,14 +14,24 @@ function MovieCard({movie}) {
         }   
     }
 
-    const {heart, setHeart} = useState(null);
+    // const {heart, setHeart} = useState(null);
 
     return (
         <div className="movie">
             <div className="poster">
 
+            {/* {isFav &&   <div className="heart">
+                            <img src={filledHeart}/>
+                        </div> } */}
+            
                 <div className="hover-info">
-                <img className='heart' src = { setHeart === null ? emptyHeart : filledHeart } alt = 'Heart'/>
+
+                <div>
+                    {isFav ? 
+                        <FavBtn movie={movie} remove={true} /> : 
+                        <FavBtn movie={movie}  />}
+                </div>
+          
                 <h3>{movie.title}</h3>
                 <p>{movie.release_date}</p>
                 <p>{overview()}</p>

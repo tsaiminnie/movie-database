@@ -1,31 +1,20 @@
 import MovieCard from './MovieCard';
 import useGlobal from '../globals/globalState';
-import { Link } from 'react-router-dom';
-import FavBtn from './FavBtn';
+// import { Link } from 'react-router-dom';
+// import FavBtn from './FavBtn';
+import isFav from '../utilities/isFav';
 
-function Movies({ movie, moviesData, link, isFav,  }) {
+function Movies({moviesData}) {
 
-    const globalStateAndglobalActions = useGlobal();
-    const globalActions = globalStateAndglobalActions[1];
+    const [globalState] = useGlobal();
+    // const globalActions = globalStateAndglobalActions[1];
 
-    function handleFavClick(addToFav, object){
-        if(addToFav === true){
-            globalActions.addFav(object);
-        }else{
-            globalActions.removeFav(object.id);
-        }
-        console.log('HEllo');
-    }
+    
  
     return (
         <section className='movies'>
-            {moviesData.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
-            {isFav && <div className="heart">Heart</div> }
-            <div>
-                {isFav ? 
-                    <FavBtn movie={movie} remove={true} handleFavClick={handleFavClick} /> : 
-                    <FavBtn movie={movie} handleFavClick={handleFavClick} />}
-            </div>
+            {moviesData.map(movie => <MovieCard key={movie.id} movie={movie} isFav={isFav(globalState.favs, null, movie.id)} />)}
+            
         </section>
     );
 }

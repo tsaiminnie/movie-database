@@ -27,7 +27,7 @@ const Nav = ({handleShowHideNav, navOpen}) => {
                 </nav>
                 </div>
 
-                <div class="overlay"></div>
+                <div className="overlay"></div>
         </nav>
     );
     
