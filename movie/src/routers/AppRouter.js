@@ -5,6 +5,8 @@ import PageAbout from '../pages/PageAbout';
 import PageFav from '../pages/PageFav';
 import PageAccount from '../pages/PageAccount';
 import PageLogin from '../pages/PageLogin';
+import PageSingle from '../pages/PageSingle';
+import MovieCard from '../components/MovieCard';
 
 function AppRouter() {
     return (
@@ -17,7 +19,8 @@ function AppRouter() {
             <Route path="/about"><PageAbout/></Route>
             <Route path="/favourites"><PageFav/></Route>
             <Route path="/my-account"><PageAccount/></Route>
-            <Route path="/sign-in"><PageLogin/></Route>           
+            <Route path="/sign-in"><PageLogin/></Route> 
+            <Route path="/single-page/:id"><PageSingle/></Route>         
           </Switch>
         </div>
       </main>
