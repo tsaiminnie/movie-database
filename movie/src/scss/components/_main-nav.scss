@@ -11,7 +11,7 @@ body{
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 90px;
+  top: 40px;
 }
 
 .overlay{
@@ -94,9 +94,10 @@ body{
   z-index: 2;
   width: 200px; 
   color: #000000;
-  transition: transform ease .3s;
+  //transition: transform ease .3s;
   //background:white;
-  top: 40px;
+  top:40px;
+
   
   
   &.right{
@@ -140,6 +141,8 @@ body{
     }
   }
 }
+  
+
 
 @media screen and (min-width: 640px) {
 
@@ -168,6 +171,13 @@ body{
         width: 80%;
       }
 
+      .container{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 90px;
+      }
+
       .menu-bar .menu-body a {
         background: none;
         color: $gold;
@@ -194,6 +204,13 @@ body{
       li {
           flex: 1;
          
+      }
+      
+      .hamburger-menu {
+       display:none;
+        &.animate {
+          display:none;
+        }
       }
     }
   }
