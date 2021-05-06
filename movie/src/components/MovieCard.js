@@ -36,7 +36,7 @@ function MovieCard({movie, isFav, trimOverview}) {
             <div className="poster">
             
 
-                <div className="hover-info">
+                <div className="hover-info singlePageInfo">
 
                 <div className='heartandrating'>
                     {isFav ? 
@@ -46,11 +46,11 @@ function MovieCard({movie, isFav, trimOverview}) {
                     <p>{rating()}</p>
                 </div>
 
-                
+                <p className="user-rating info">{rating()}</p>
           
-                <h3>{title()}</h3>
-                <p>{movie.release_date}</p>
-                <p>{trimOverview ? overview() : movie.overview}</p>
+                <h3 className="info">{title()}</h3>
+                <p className="date info">{movie.release_date}</p>
+                <p className="overview info">{trimOverview ? overview() : movie.overview}</p>
                 <Link className="link" to={`/single-page/${movie.id}`}>More Info</Link>
                 </div>
 
