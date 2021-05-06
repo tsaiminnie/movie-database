@@ -5,77 +5,107 @@
     h3 {
         color: $gold;
         font-size: 2rem;
+        position: absolute;
+        top: 35rem;
     }
 
     p {
         color: white;
         max-width: 90%;
+        position: absolute;
+    }
+
+    p.release-date {
+        top: 38rem;
+        color: $gold;
+    }
+
+    p.date {
+        top: 40rem;
+    }
+
+    p.overview-title {
+        top: 46rem;
+        color: $gold
+    }
+
+    p.overview {
+        top: 48rem;
     }
 
     img {
+        height: 27rem;
         width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        position: absolute;
+        top: 7rem;
     }
 
     .heart {
         width: 48px;
-        height: 48px; 
+        height: 48px;
+        position: absolute;
+        top: 42rem; 
+    }
+
+    p.user-rating{
+        border-radius: 50%;
+        color: white;
+        border: 2px solid #fff;
+        width: 42px;
+        line-height: 42px;
+        margin: 0;
+        margin-left: 4rem;
+        padding: 0.2rem;
+        top: 42rem;
     }
 
     .link {
         display: none;
-    }
+    } 
+}
 
+.singlePageInfo {
+    margin-left: 1rem;
+}
+p.release-date {
+    margin-left: 1rem;
+}
+
+p.overview-title {
+    margin-left: 1rem;
 }
 
 
-// .poster {
-//     background-size: cover;
-//     transition: background-color 1s ease;
-//     position: relative;
+@media (min-width: $tablet) {
+    .singlePageInfo {
+        margin-left: 1rem;
 
-//     .hover-info {
-//         background: rgba(0, 0, 0, .8);
-//         content: '';
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         flex-direction: column;
-//         // top: 0;
-//         // left: 0;
-//         // display: none;
-//     }
+        p.overview {
+            max-width: 40rem;
+        }
+    }
 
-//     &:hover .hover-info {
-//         display: flex;
-//     }
+    p.release-date {
+        margin-left: 1rem;
+    }
 
-//     img {
-//         display: block;
-//     }
+    p.overview-title {
+        margin-left: 1rem;
+    }
+}
 
-//     .heart {
-//         width: 48px;
-//         height: 48px; 
-//         align-self: flex-end;
-//     }
+@media (min-width: $tabletlg) {
+    .singlePageInfo {
+        margin-left: 5rem;
+    }
 
-//     h3{
-//         font-size: 1.5rem;
-//         font-weight: bold;
-//     }
+    p.release-date {
+        margin-left: 5rem;
+    }
 
-//    h3, p {
-//         margin: 1rem 1rem;
-//         text-align: center;
-//         color: $gold;
-//     }
-
-//     a {
-//         color: white;
-//         text-decoration: none;
-//         text-transform: uppercase;
-//         display: flex;
-//         justify-content: center;
-//     }
-// }
+    p.overview-title {
+        margin-left: 5rem;
+    }
+}

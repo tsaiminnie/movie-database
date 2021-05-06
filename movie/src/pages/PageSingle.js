@@ -48,7 +48,8 @@ const PageSingle = () => {
                                 isFav={isFav(globalState.favs, null, singleMovie.id)}
                                 trimOverview={false}/>
                             </div> }
-                      
+        <p className="release-date singlePageInfo">Release Date:</p> 
+        <p className="overview-title singlePageInfo">Overview:</p>    
                 
         </section>
     );
