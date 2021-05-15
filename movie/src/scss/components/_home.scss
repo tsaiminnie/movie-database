@@ -23,36 +23,19 @@
     }
 }
 
-.login-btn {
-    background-color: black;
-    border: none;
-    position: absolute;
-    left: 4rem;
-    bottom: 8rem;
-    padding: 0.3rem 0.8rem;
-    margin-bottom: 1rem;
-    p {
-        font-family: $pageFont;
-        font-size: 1rem;
-        color: $gold;
-    }
-}
 
-.hero-arrow {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 1rem;
-    margin: 0 auto;
-    display: none;
-}
+// .hero-arrow {
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     bottom: 1rem;
+//     margin: 0 auto;
+//     display: none;
+// }
 
 
 
 @media (min-width: 500px){
-    .login-btn {
-        display: none;
-    }
 
     .slogan {
         display: block;
@@ -75,9 +58,9 @@
 }
 
 @media (min-width: 1280px){
-    .hero-arrow {
-        display: block;
-    }
+    // .hero-arrow {
+    //     display: block;
+    // }
 
     .title {
         top: 25rem;

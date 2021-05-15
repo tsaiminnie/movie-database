@@ -2,7 +2,6 @@
 
 
 .home-section .movies {
-    border: 1px solid white;
 
     img {
         width: 100%;
@@ -15,8 +14,9 @@
     }
 
     .movie {
-        margin: 5rem auto;
-        width: 250px; 
+        margin: 0 auto;
+        width: 200px; 
+        height: 350px;
     }
 }
 
@@ -26,40 +26,68 @@
 
        .home-section .movies {
             display: grid;
-            grid-template-columns: repeat( auto-fit, 200px); 
+            grid-template-columns: repeat( 2, 200px); 
             justify-content: center;
             gap: 1rem;
 
             .movie {
-                width: 200px;
+                // width: 200px;
             }
         }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: 500px) {
 
    .home-section .movies {
         display: grid;
-        grid-template-columns: repeat( auto-fit, 180px); 
+        grid-template-columns: repeat( 2, 180px); 
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
 
         .movie {
-            width: 180px;
+            // width: 180px;
         }
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: 768px) {
+
+    .home-section .movies {
+         display: grid;
+         grid-template-columns: repeat( 3, 180px); 
+         justify-content: center;
+         gap: 3rem;
+ 
+         .movie {
+             // width: 180px;
+         }
+     }
+ }
+
+@media (min-width: 1024px) {
+
+    .home-section .movies {
+         display: grid;
+         grid-template-columns: repeat( 4, 180px); 
+         justify-content: center;
+         gap: 4rem;
+ 
+         .movie {
+             // width: 180px;
+         }
+     }
+ }
+
+@media (min-width: 1300px) {
 
    .home-section .movies {
         display: grid;
-        grid-template-columns: repeat( auto-fit, 160px); 
+        grid-template-columns: repeat( 6, 200px); 
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
 
         .movie {
-            width: 160px;
+            // width: 160px;
         }
     }
 }

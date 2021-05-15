@@ -5,8 +5,8 @@ function MovieCard({movie, isFav, trimOverview, cast}) {
 
     function overview(){
        let str = movie.overview;
-       if (str.length > 50){
-       str = str.substring(0, 50)+ "...";
+       if (str.length > 30){
+       str = str.substring(0, 30)+ "...";
        return str;
         }   
     }
@@ -35,7 +35,7 @@ function MovieCard({movie, isFav, trimOverview, cast}) {
         <div className="movie">
             <div className="poster">
             
-
+            <div className="page-home">
                 <div className="hover-info singlePageInfo">
 
                 <div className='heartandrating'>
@@ -43,10 +43,10 @@ function MovieCard({movie, isFav, trimOverview, cast}) {
                         <FavBtn movie={movie} remove={true} /> : 
                         <FavBtn movie={movie}  />}
 
-                    <p>{rating()}</p>
+                    <p className="user-rating">{rating()}</p>
                 </div>
 
-                <p className="user-rating info">{rating()}</p>
+                {/* <p className="user-rating info">{rating()}</p> */}
           
                 <h3 className="info">{title()}</h3>
                 <p className="date info">{movie.release_date}</p>
@@ -61,9 +61,10 @@ function MovieCard({movie, isFav, trimOverview, cast}) {
                 {/* {profile_path}  */}
 
                 {/* Add a check here to see if there is no poster*/}
-                <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}></img>
+                <img className ="poster-img" src={`https://image.tmdb.org/t/p/w780/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}></img>
+               
             </div>
-
+            </div>
             <div className='bar'></div>
         </div>
     )

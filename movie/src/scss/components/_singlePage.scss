@@ -2,6 +2,10 @@
 
 .single-page {
 
+    .poster-img {
+        visibility: hidden;
+    }
+
     h3 {
         color: $gold;
         font-size: 2rem;
@@ -16,37 +20,38 @@
     }
 
     p.release-date {
-        top: 38rem;
+        top: 42rem;
         color: $gold;
     }
 
     p.date {
-        top: 40rem;
+        top: 44rem;
     }
 
     p.overview-title {
-        top: 46rem;
+        top: 50rem;
         color: $gold
     }
 
     p.overview {
-        top: 48rem;
+        top: 52rem;
     }
 
     img {
-        height: 27rem;
+        height: 30vh;
         width: 100%;
         object-fit: cover;
-        object-position: center center;
+        // object-position: center center;
         position: absolute;
         top: 7rem;
+        vertical-align: middle;
     }
 
     .heart {
         width: 48px;
         height: 48px;
         position: absolute;
-        top: 42rem; 
+        top: 47.5rem; 
     }
 
     p.user-rating{
@@ -56,56 +61,105 @@
         width: 42px;
         line-height: 42px;
         margin: 0;
-        margin-left: 4rem;
+        margin-left: 5rem;
         padding: 0.2rem;
-        top: 42rem;
+        top: 47.5rem;
+        z-index: 100;
     }
 
     .link {
         display: none;
     } 
 }
-
+.page-home {
 .singlePageInfo {
-    margin-left: 1rem;
+    // margin-left: 1rem;
 }
 p.release-date {
-    margin-left: 1rem;
+    // margin-left: 1rem;
 }
 
 p.overview-title {
-    margin-left: 1rem;
+    // margin: 0 auto;
+}
 }
 
+// @media (min-width: 360px) {
+//     .single-page img {
+//         height: 35vh;
+//         width: 100%;
+//         object-fit: cover;
+//         // object-position: center center;
+//         position: absolute;
+//         top: 7rem;
+//     }
+//     .singlePageInfo {
+//         // margin-left: 1rem;
 
-@media (min-width: $tablet) {
-    .singlePageInfo {
-        margin-left: 1rem;
+//         p.overview {
+//             max-width: 40rem;
+//         }
+//     }
 
-        p.overview {
-            max-width: 40rem;
-        }
-    }
+//     p.release-date {
+//         // margin-left: 1rem;
+//     }
 
-    p.release-date {
-        margin-left: 1rem;
-    }
+//     p.overview-title {
+//     //     margin-left: 1rem;
+//     }
+// }
 
-    p.overview-title {
-        margin-left: 1rem;
-    }
-}
+// @media (min-width: 740px) {
+//     .single-page img {
+//         height: 40vh;
+//     }
 
-@media (min-width: $tabletlg) {
-    .singlePageInfo {
-        margin-left: 5rem;
-    }
+//     .singlePageInfo {
+//         // margin-left: 5rem;
+//     }
 
-    p.release-date {
-        margin-left: 5rem;
-    }
+//     p.release-date {
+//         // margin-left: 5rem;
+//     }
 
-    p.overview-title {
-        margin-left: 5rem;
-    }
-}
+//     p.overview-title {
+//         // margin-left: 5rem;
+//     }
+// }
+
+// @media (min-width: 850px) {
+//     .single-page img {
+//         height: 43vh;
+//     }
+// }
+
+// @media (min-width: 928px) {
+//     .single-page img {
+//         height: 50vh;
+//     }
+// }
+
+// @media (min-width: 1080px) {
+//     .single-page img {
+//         height: 55vh;
+//     }
+// }
+
+// @media (min-width: 1174px) {
+//     .single-page img {
+//         height: 60vh;
+//     }
+// }
+
+// @media (min-width: 1174px) {
+//     .single-page img {
+//         height: 65vh;
+//     }
+// }
+
+// @media (min-width: 1390px) {
+//     .single-page img {
+//         height: 70vh;
+//     }
+// }
