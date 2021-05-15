@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import FavBtn from './FavBtn';
 
-function MovieCard({movie, isFav, trimOverview}) {
+function MovieCard({movie, isFav, trimOverview, cast}) {
 
     function overview(){
        let str = movie.overview;
@@ -53,6 +53,12 @@ function MovieCard({movie, isFav, trimOverview}) {
                 <p className="overview info">{trimOverview ? overview() : movie.overview}</p>
                 <Link className="link" to={`/single-page/${movie.id}`}>More Info</Link>
                 </div>
+
+            {/* What we will want to be eventually calling below */}
+                {/* {cast_id} */}
+                {/* {character} */}
+                {/* {name} */}
+                {/* {profile_path}  */}
 
                 {/* Add a check here to see if there is no poster*/}
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}></img>

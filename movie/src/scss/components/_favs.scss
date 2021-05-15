@@ -1,0 +1,79 @@
+@use '../base/settings' as *;
+
+.favourites-page {
+
+    h2{
+        color: $gold;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: $gold;
+        position: absolute;
+        top: 32rem;
+    }
+
+    p {
+        color: white;
+        position: absolute;
+        max-width: 90%;
+    }
+
+    p.release-date {
+        top: 35rem;
+        color: $gold;
+    }
+
+    p.date {
+        top: 37rem;
+    }
+
+    p.overview-title {
+        top: 43rem;
+        color: $gold
+    }
+
+    p.overview {
+        top: 45rem;
+    }
+
+    img {
+        width: 15rem;
+    }
+
+    .heart {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 39rem; 
+    }
+
+    p.user-rating{
+        border-radius: 50%;
+        color: white;
+        border: 2px solid #fff;
+        width: 42px;
+        line-height: 42px;
+        margin: 0;
+        margin-left: 4rem;
+        padding: 0.2rem;
+        top: 39rem;
+    }
+
+    .link {
+        position: absolute;
+        top: 39.4rem;
+        color: white;
+        text-decoration: none;
+        margin-left: 8rem;
+        border: 2px solid white;
+        padding: 0.5rem;
+        font-size: 1rem;
+        &:hover {
+            color: $gold;
+            border: 2px solid $gold; 
+        }
+    } 
+}
