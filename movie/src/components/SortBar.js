@@ -5,6 +5,11 @@ function SortBar() {
 
     const [redirect, setRedirect] = useState(false);
 
+    // function isDesktop(e){
+    //     if(e.matches){
+    //         .select-form;
+    //     }
+
     function handleChange(e){
         setRedirect(e.target.value);
     }
@@ -19,7 +24,7 @@ function SortBar() {
     return (
         <section className='sort'>
             {redirect && <Redirect to={redirect}/> }
-                <form>
+                <form className='select-form'>
                     <select onChange={handleChange}>
                         <option value='/sort/popular'>
                             Popular
@@ -35,6 +40,10 @@ function SortBar() {
                         </option>
                     </select>
                 </form>
+
+                {/* <form className='nav-form'>
+
+                </form> */}
         </section>
     );
 }
