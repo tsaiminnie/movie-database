@@ -43,6 +43,7 @@ const PageSingle = () => {
             {singleMovie === false && <p>Movie not found. <Link to="/">Return to home page</Link>.</p>}
 
             {singleMovie && <div className="singleMovie">
+            <img className ="backdrop" src={`https://image.tmdb.org/t/p/w1280/${singleMovie.backdrop_path}`} alt={`A poster for the movie ${singleMovie.title}`}></img>
      
                     <MovieCard  movie={singleMovie} 
                                 isFav={isFav(globalState.favs, null, singleMovie.id)}

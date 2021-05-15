@@ -2,21 +2,32 @@
 
 .home-section .poster {
     // background-size: cover;
-    transition: background-color 2s ease-in-out;
+    transition: ease 5s;
     position: relative;
 
+    &:hover {
+        transition: ease 5s;
+        background-color: rgba(0, 0, 0, .8);
+    }    
+
     .hover-info {
-        transition: background-color 2s ease-in-out;
-        // background-color: rgba(0, 0, 0, .8);
+        transition: ease 5s;
+        background-color: rgba(0, 0, 0, .8);
         content: '';
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 300px;
         display: flex;
         flex-direction: column;
         // top: 0;
         // left: 0;
         display: none;
+        
+
+        &:hover {
+            transition: ease 5s;
+            background-color: rgba(0, 0, 0, .8);
+        }
 
         .heartandrating {
             display: flex;
@@ -45,19 +56,22 @@
     }
 
     &:hover .hover-info {
+        transition: ease 5s;
+        opacity: 1;
         background-color: rgba(0, 0, 0, .8);
         display: flex;
     }
 
     img {
+        transition: ease 5s;
         display: block;
-        height: 240px;
+        height: 300px;
     }
 
 
 
     h3{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: bold;
     }
 
@@ -75,6 +89,7 @@
         justify-content: center;
 
         &:hover {
+            transition: ease 5s;
             color: #A86244;
         }
     }

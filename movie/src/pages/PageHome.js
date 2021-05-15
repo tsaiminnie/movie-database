@@ -6,8 +6,8 @@ import useGlobal from '../globals/globalState';
 import isFav from '../utilities/isFav';
 import Movies from '../components/Movies';
 import SortBar from '../components/SortBar';
-import LoginBtn from '../components/LoginBtn';
-import BgArrow from '../components/BgArrow';
+// import LoginBtn from '../components/LoginBtn';
+// import BgArrow from '../components/BgArrow';
 
 const PageHome = ({sort}) => {
 
@@ -43,7 +43,7 @@ const PageHome = ({sort}) => {
     return (
         <section className="home-section">
             <ResponsiveBg />
-            <LoginBtn />
+            {/* <LoginBtn /> */}
             <section className='title'>
                 <h1>DiscoveryFlix</h1>
             </section>
@@ -53,7 +53,7 @@ const PageHome = ({sort}) => {
                 <h2>Imagine</h2>
             </section>
       
-            <BgArrow />
+            {/* <BgArrow /> */}
             <SortBar/>
 
             {moviesData !== null && <Movies moviesData={moviesData} />}
