@@ -1,12 +1,13 @@
 @use '../base/settings' as *;
 
 .home-section .poster {
-    background-size: cover;
-    transition: background-color 1s ease;
+    // background-size: cover;
+    transition: background-color 2s ease-in-out;
     position: relative;
 
     .hover-info {
-        background: rgba(0, 0, 0, .8);
+        transition: background-color 2s ease-in-out;
+        // background-color: rgba(0, 0, 0, .8);
         content: '';
         position: absolute;
         width: 100%;
@@ -15,7 +16,7 @@
         flex-direction: column;
         // top: 0;
         // left: 0;
-        // display: none;
+        display: none;
 
         .heartandrating {
             display: flex;
@@ -44,11 +45,13 @@
     }
 
     &:hover .hover-info {
+        background-color: rgba(0, 0, 0, .8);
         display: flex;
     }
 
     img {
         display: block;
+        height: 240px;
     }
 
 
