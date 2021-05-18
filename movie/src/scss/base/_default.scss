@@ -8,6 +8,12 @@ html {
     padding: 0.5rem;
 }
 
+@media screen and (min-width: 640px){
+    .logo {
+        width: 6rem;
+    }
+}
+
 img {
     max-width: 100;
 }

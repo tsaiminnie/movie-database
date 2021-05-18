@@ -96,7 +96,7 @@ body{
   color: #000000;
   //transition: transform ease .3s;
   //background:white;
-  top:40px;
+  top:25px;
 
   
   
@@ -190,7 +190,7 @@ body{
 
       .menu-bar.right {
         box-shadow: none;
-        top: 8px;
+        top: 25px;
 
       }
       
@@ -198,7 +198,8 @@ body{
        ul {
           display: flex;
           flex: row;
-          width: 530px;  
+          width: 400px;
+          // width: 530px;  
       }
 
       li {
@@ -213,8 +214,15 @@ body{
         }
       }
     }
+    
+    @media screen and (min-width: 1024px) {
+
+      .menu-bar .menu-body a {
+        font-size: 1.4rem;
+      }
+    
+    }
+    
+
+
   }
-
-
- 
-
