@@ -19,7 +19,7 @@ const Nav = ({handleShowHideNav, navOpen}) => {
                     <li><NavLink to="/" exact>Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
                     <li><NavLink to="/favourites">Favourites</NavLink></li>
-                    <li><NavLink to="/my-account">My Account</NavLink></li>
+                    {/* <li><NavLink to="/my-account">My Account</NavLink></li> */}
                     {/* <li><NavLink to="/sign-in">Sign In</NavLink></li> */}
                 
                     </ul>

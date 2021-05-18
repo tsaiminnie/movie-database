@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { pageTitle } from '../globals/globals';
+import aboutImage from '../images/about-image.png';
+import tmdbLogo from '../images/tmdb-logo-small.svg';
 
 const PageAbout = () => {
 
@@ -10,8 +12,9 @@ const PageAbout = () => {
     return (
         <section className="about-page">
 
-            <h1>About</h1> 
-            <h2>Hello!</h2>
+            <img className="about-img" src={aboutImage} />
+
+            <h2>Welcome!</h2>
             <p className="welcome"> Welcome to the DiscoveryFlix movie database. We are a group of movie enthusiasts from beautiful Vancouver, BC, Canada who have created this database for people of all ages to share their love for movies.</p> 
             <h2>Start Discovering</h2>
             <section>
@@ -28,6 +31,11 @@ const PageAbout = () => {
                     <p className="text">Write a review of the movie and share it with others!</p>
                 </div>
             </section>
+
+            <div className="tmdb-info">
+            <p>DiscoveryFlix uses the TMDb API but is not endorsed or certified by TMDb.</p>
+            <img className="tmdb-logo" src={tmdbLogo} />
+            </div>
         </section>
     );
 };

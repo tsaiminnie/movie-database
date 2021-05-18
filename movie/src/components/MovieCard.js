@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import FavBtn from './FavBtn';
 
-function MovieCard({movie, isFav, trimOverview, cast}) {
+function MovieCard({className, movie, isFav, trimOverview, cast}) {
 
     function overview(){
        let str = movie.overview;
@@ -32,7 +32,7 @@ function MovieCard({movie, isFav, trimOverview, cast}) {
 
 
     return (
-        <div className="movie">
+        <div className={className}>
             <div className="poster">
             
             <div className="page-home">
@@ -71,6 +71,7 @@ function MovieCard({movie, isFav, trimOverview, cast}) {
 }
 
 MovieCard.defaultProps = {
-    trimOverview : true
+    trimOverview : true,
+    className : "movie"
 }
 export default MovieCard;

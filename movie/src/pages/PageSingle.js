@@ -55,6 +55,7 @@ const PageSingle = () => {
             <img className ="backdrop" src={`https://image.tmdb.org/t/p/w1280/${singleMovie.backdrop_path}`} alt={`A poster for the movie ${singleMovie.title}`}/>
      
                     <MovieCard  movie={singleMovie} 
+                                className="singleMovie"
                                 isFav={isFav(globalState.favs, null, singleMovie.id)}
                                 trimOverview={false}/>
                             </div> }
