@@ -94,9 +94,8 @@ body{
   z-index: 2;
   width: 200px; 
   color: #000000;
-  //transition: transform ease .3s;
-  //background:white;
   top:25px;
+
 
   
   
@@ -110,15 +109,6 @@ body{
     transition: transform ease .3s;
   }
   
-  // .menu-heading{
-  //   width: 100%;
-  //   font-size: 1rem;
-  //   padding: 60px 0;
-  //   text-align: center;
-  //   background: rgba(66, 62, 62, .2);
-  //   color: white;
-  //   border-bottom: 1px solid #ccc;
-  // }
   
   .menu-body{
        
@@ -191,6 +181,7 @@ body{
       .menu-bar.right {
         box-shadow: none;
         top: 25px;
+
 
       }
       
