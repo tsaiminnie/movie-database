@@ -39,8 +39,8 @@ const PageSingle = () => {
             return (
                 <div className="actorCard">
                     <img className="actor-img" src={`https://image.tmdb.org/t/p/w185/${member.profile_path}`} alt={`${member.name}`}/>
-                    <h3>{member.name}</h3>
-                    <p>{member.character}</p>
+                    <h2>{member.character}</h2>
+                    <p>{member.name}</p>
                 </div>
             )
          })
