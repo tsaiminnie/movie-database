@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import FavBtn from './FavBtn';
+import noPoster from '../images/no-movie-poster.jpg';
 
 function MovieCard({className, movie, isFav, trimOverview, cast}) {
 
@@ -45,8 +46,6 @@ function MovieCard({className, movie, isFav, trimOverview, cast}) {
 
                     <p className="user-rating">{rating()}</p>
                 </div>
-
-                {/* <p className="user-rating info">{rating()}</p> */}
           
                 <h3 className="info">{title()}</h3>
                 <p className="date info">{movie.release_date}</p>
@@ -54,8 +53,12 @@ function MovieCard({className, movie, isFav, trimOverview, cast}) {
                 <Link className="link" to={`/single-page/${movie.id}`}>More Info</Link>
                 </div>
 
-                {/* Add a check here to see if there is no poster*/}
-                <img className ="poster-img" src={`https://image.tmdb.org/t/p/w780/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}/>
+                {movie.poster_path === null ? 
+                
+                    <img className="noPoster-img" src={noPoster}     /> :
+                    <img className ="poster-img" src={`https://image.tmdb.org/t/p/w780/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}/>
+                }
+                
                
             </div>
             </div>

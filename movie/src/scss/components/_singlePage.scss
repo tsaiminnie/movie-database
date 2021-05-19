@@ -35,7 +35,6 @@
         top: 32rem;
     }
 
-    
     p.overview {
         top: 39rem;
         margin-right: 2rem;
@@ -45,7 +44,6 @@
         height: 20rem;
         width: 100%;
         object-fit: cover;
-        // object-position: center center;
         position: absolute;
         top: 7rem;
         vertical-align: middle;
@@ -123,7 +121,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
     }
 
     .actorCard {
@@ -135,24 +132,34 @@
     }
 }
 
+@media screen and (min-width: 700px) {
+
+    .singleMovie {
+                h3,
+                p.date,
+                p.overview,
+                .heart,
+                p.user-rating{
+                    left: 4rem;
+                    right: 4rem;
+                }
+            }
+
+            .single-page {
+                .overview-title,
+                .release-date {
+                    left: 4rem;
+                    right: 4rem;
+                }
+            }
+
+            p.overview {
+                max-width: 50rem;
+                padding-right: 2rem;
+            }
+}
+
 @media screen and (min-width: 850px) {
-    .main-cast {
-        width: 25rem;
-        top: 28rem;
-
-        img {
-            width: 125px;
-            height: auto;
-        }
-    }
-
-    .actorCard {
-        padding: 0.15rem;
-
-        h2{
-            max-width: 150px;
-        }
-    }
 
     .singleMovie {
 
@@ -161,15 +168,130 @@
         p.overview,
         .heart,
         p.user-rating{
-            left: 25rem;
+            left: 8vw;
         }
     }
 
-    
     .single-page {
         .overview-title,
         .release-date {
-            left: 25rem;
+            left: 8vw;
+        }
+    }
+
+    p.overview {
+        width: 50rem;
+    }
+
+    .main-cast {
+        top: 50rem;
+      }
+}
+
+@media screen and (min-width: 950px) {
+
+    .singleMovie {
+        h3,
+        p.date,
+        p.overview,
+        .heart,
+        p.user-rating{
+            left: 11vw;
+        }
+    }
+
+    .single-page {
+        .overview-title,
+        .release-date {
+            left: 11vw;
+        }
+    }
+
+    p.overview {
+        padding-right: 15rem;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    .singleMovie {
+        h3,
+        p.date,
+        p.overview,
+        .heart,
+        p.user-rating{
+            left: 16vw;
+        }
+    }
+
+    .single-page {
+        .overview-title,
+        .release-date {
+            left: 16vw;
+        }
+    }
+
+    p.overview {
+        width: 40rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .singleMovie {
+        h3,
+        p.date,
+        p.overview,
+        .heart,
+        p.user-rating{
+            left: 22vw;
+        }
+    }
+
+    .single-page {
+        .overview-title,
+        .release-date {
+            left: 22vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .singleMovie {
+        h3,
+        p.date,
+        p.overview,
+        .heart,
+        p.user-rating{
+            left: 27vw;
+        }
+    }
+
+    .single-page {
+        .overview-title,
+        .release-date {
+            left: 27vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .singleMovie {
+        h3,
+        p.date,
+        p.overview,
+        .heart,
+        p.user-rating{
+            left: 30vw;
+        }
+    }
+
+    .single-page {
+        .overview-title,
+        .release-date {
+            left: 30vw;
         }
     }
 }

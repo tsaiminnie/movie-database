@@ -4,7 +4,7 @@ import { useLocation, useParams, Link } from 'react-router-dom';
 import useGlobal from '../globals/globalState';
 import MovieCard from '../components/MovieCard';
 import isFav from '../utilities/isFav';
-import { API_TOKEN } from '../globals/globals';
+import noPoster from '../images/no-movie-poster.jpg';
 
 const PageSingle = () => {
 
@@ -13,8 +13,6 @@ const PageSingle = () => {
     const { id } = useParams();
 
     const [singleMovie, setSingleMovie] = useState(null);
-
-    // const [singleCredit, setSingleCredit] = useState(null);
 
     useEffect(() => {
 
@@ -34,11 +32,15 @@ const PageSingle = () => {
     }, [id]);
 
     function makeCast(arr) {
-        arr = arr.splice(0, 4)
+        arr = arr.slice(0, 4)
         return arr.map(member => { 
             return (
                 <div className="actorCard">
-                    <img className="actor-img" src={`https://image.tmdb.org/t/p/w185/${member.profile_path}`} alt={`${member.name}`}/>
+                    {member.profile_path === null ? 
+                        <img className="actor-img" src={noPoster}     /> :
+                        <img className="actor-img" src={`https://image.tmdb.org/t/p/w185/${member.profile_path}`} alt={`${member.name}`}/>
+                    }
+                    
                     <h2>{member.character}</h2>
                     <p>{member.name}</p>
                 </div>
