@@ -1,42 +1,62 @@
 @use '../base/settings' as *;
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
 
-.favourites-page {
+.favourites-page .ourFavourites{ 
+
+    display:flex;
+    flex-direction:column;
+   
 
     h2{
         color: $gold;
         text-align: center;
         font-size: 2rem;
+       
     }
 
     h3 {
         font-size: 2rem;
         color: $gold;
-        position: absolute;
-        top: 32rem;
+        top: 30rem;
+        right:0;
+        left:0;
+        text-align:center;
     }
 
     p {
         color: white;
-        position: absolute;
-        max-width: 90%;
+        
     }
 
     p.release-date {
-        top: 35rem;
+        top: 20rem;
+        left:0;
+        right:0;
+        text-align:center;
         color: $gold;
     }
 
     p.date {
-        top: 37rem;
+        top: 22rem;
+        left:0;
+        right:0;
+        text-align:center;
     }
 
     p.overview-title {
-        top: 43rem;
-        color: $gold
+        top: 25rem;
+        color: $gold;
+        right:0;
+        left:0;
+        text-align:center;
     }
 
     p.overview {
-        top: 45rem;
+        top: 30rem;
+        right:10;
+        left:0;
+        width:50%;
+       
     }
 
     img {
@@ -46,7 +66,6 @@
     .heart {
         width: 48px;
         height: 48px;
-        position: absolute;
         top: 39rem; 
     }
 
@@ -63,8 +82,8 @@
     }
 
     .link {
-        position: absolute;
-        top: 39.4rem;
+        
+        top:39rem;
         color: white;
         text-decoration: none;
         margin-left: 8rem;
@@ -76,4 +95,45 @@
             border: 2px solid $gold; 
         }
     } 
+}
+
+.noFavourites {
+
+    
+    h2{
+        font-family:$favouriteFont;
+        color:$gold;
+        font-size: 8rem;
+        text-align:center;
+        opacity: 0.3;
+        position:relative;
+    }
+
+   
+
+    p{
+        color:white;
+        position:absolute;
+        bottom:190px;
+        right:0px;
+        left:0px;
+        text-align:center;
+    }
+
+    .tv{
+       
+        fill: #867C72;    
+        max-width: 100px;
+        position:absolute;
+        bottom:20px;
+        
+        
+          
+    }
+
+    .flex-image{
+        display:flex;
+        justify-content:center;
+    }
+
 }
