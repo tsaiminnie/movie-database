@@ -17,22 +17,20 @@ const PageFav = () => {
 
     return (
         <section className="favourites-page">
-            
-            
+
             {globalState.favs.length < 1 ? <section className="noFavourites">
                     
-                <h2>Favourites</h2>
+                                              <h2>Favourites</h2>
             
-            <div className="flex-image">
-                
-                <p>No favourite movies. Return to the <Link to="/">home</Link> page to add some!</p> : 
-
-                <img className="tv" alt='tv' src={tv}></img>
-            </div>
+                                              <div className="flex-image">
+                                                <p>No favourite movies. Return to the <Link to="/">home</Link> page to add some!</p> 
+                                                <img className="tv" alt='tv' src={tv}/>
+                                              </div>
 
             </section>:
                 <div className="ourFavourites"> 
                     <h2>Favourites</h2>
+
                         {globalState.favs.map((singleMovie, i) => {
                             return <MovieCard   key={i} 
                                                 movie={singleMovie}
