@@ -23,7 +23,7 @@ const Header = () => {
     return (
 
     <header className={navOpen ? 'show': 'closed'}>
-                    <img className="logo" alt='logo' src={logo}></img>
+                    <a href="/"><img className="logo" alt='logo' src={logo} /></a>
     
         <div className="menu-wrapper"
            onMouseDown={(e) => { e.preventDefault(); }}
