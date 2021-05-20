@@ -32,11 +32,11 @@
     }
 
     p.date {
-        top: 32rem;
+        top: 34rem;
     }
 
     p.overview {
-        top: 39rem;
+        top: 41rem;
         margin-right: 2rem;
     }
 
@@ -53,7 +53,7 @@
         width: 48px;
         height: 48px;
         position: absolute;
-        top: 35rem; 
+        top: 37rem; 
     }
 
     p.user-rating{
@@ -65,7 +65,7 @@
         margin: 0;
         margin-left: 5rem;
         padding: 0.2rem;
-        top: 35rem;
+        top: 37rem;
         z-index: 100;
     }
 
@@ -95,17 +95,31 @@
         text-transform: uppercase;
         font-size: 1.25rem;
     }
+
+    .no-image{
+        border: 1px solid $gold;
+        height: 276px;
+
+        img{
+            width: 7rem;
+            padding-top: 2.5rem;
+        }
+
+        p{
+            font-style: normal;
+        }
+    }
 }
 
 .single-page {
     .overview-title {
-        top: 37rem;
+        top: 39rem;
         color: $gold;
         position: absolute;
     }
 
     .release-date {
-        top: 30rem;
+        top: 32rem;
         color: $gold;
         position: absolute;
     }
