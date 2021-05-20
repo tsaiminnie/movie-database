@@ -30,7 +30,7 @@ function AppRouter() {
           </Switch>
         </div>
       </main>
-      <Footer></Footer>
+      <Footer />
     </Router>
    
     )}

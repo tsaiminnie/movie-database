@@ -11,9 +11,11 @@ const PageAbout = () => {
 
     return (
         <section className="about-page">
-
+            <div className="background">
             <img className="about-img" src={aboutImage} />
+            </div>
 
+            <section className="about-info">
             <h2>Welcome!</h2>
             <p className="welcome"> Welcome to the DiscoveryFlix movie database. We are a group of movie enthusiasts from beautiful Vancouver, BC, Canada who have created this database for people of all ages to share their love for movies.</p> 
             <h2>Start Discovering</h2>
@@ -36,6 +38,7 @@ const PageAbout = () => {
             <p>DiscoveryFlix uses the TMDb API but is not endorsed or certified by TMDb.</p>
             <img className="tmdb-logo" src={tmdbLogo} />
             </div>
+            </section>
         </section>
     );
 };
