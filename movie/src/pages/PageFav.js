@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import useGlobal from '../globals/globalState';
 import Movies from '../components/Movies';
 import MovieCard from '../components/MovieCard';
+import tv from '../images/tv.png';
 
 const PageFav = () => {
 
@@ -16,18 +17,29 @@ const PageFav = () => {
 
     return (
         <section className="favourites-page">
-            <h2>Favourites</h2>
-            {globalState.favs.length < 1 ? <p>No favourite movies. Return to the <Link to="/">home</Link> page to add some!</p> : 
-                    <div> 
+
+            {globalState.favs.length < 1 ? <section className="noFavourites">
+                    
+                                              <h2>Favourites</h2>
+            
+                                              <div className="flex-image">
+                                                <p>No favourite movies. Return to the <Link to="/">home</Link> page to add some!</p> 
+                                                <img className="tv" alt='tv' src={tv}/>
+                                              </div>
+
+            </section>:
+                <div className="ourFavourites"> 
+                    <h2>Favourites</h2>
+
                         {globalState.favs.map((singleMovie, i) => {
                             return <MovieCard   key={i} 
                                                 movie={singleMovie}
                                                 isFav={true} 
                                                 trimOverview={false}/>
                     })}
+
 				    </div>}
-            <p className="release-date singlePageInfo">Release Date:</p> 
-            <p className="overview-title singlePageInfo">Overview:</p> 
+            
         </section>
     );
 };

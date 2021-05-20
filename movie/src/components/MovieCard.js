@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import FavBtn from './FavBtn';
+import tv from '../images/tv.png';
 
 function MovieCard({className, movie, isFav, trimOverview, cast}) {
 
@@ -45,8 +46,6 @@ function MovieCard({className, movie, isFav, trimOverview, cast}) {
 
                     <p className="user-rating">{rating()}</p>
                 </div>
-
-                {/* <p className="user-rating info">{rating()}</p> */}
           
                 <h3 className="info">{title()}</h3>
                 <p className="date info">{movie.release_date}</p>
@@ -54,14 +53,16 @@ function MovieCard({className, movie, isFav, trimOverview, cast}) {
                 <Link className="link" to={`/single-page/${movie.id}`}>More Info</Link>
                 </div>
 
-            {/* What we will want to be eventually calling below */}
-                {/* {cast_id} */}
-                {/* {character} */}
-                {/* {name} */}
-                {/* {profile_path}  */}
+                {movie.poster_path === null ? 
+                
+                    <div className="no-image">
+                        <img className="poster-img" src={tv} alt="No movie poster image available..."/>
+                        <p>No image available...</p>
+                    </div> :
 
-                {/* Add a check here to see if there is no poster*/}
-                <img className ="poster-img" src={`https://image.tmdb.org/t/p/w780/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}></img>
+                    <img className ="poster-img" src={`https://image.tmdb.org/t/p/w780/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}/>
+                }
+                
                
             </div>
             </div>

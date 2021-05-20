@@ -1,7 +1,6 @@
 @use '../base/settings' as *;
 
 .about-page {
-    
 
     .about-img{
         opacity: 0.2;
@@ -10,7 +9,7 @@
         width: 100vw;
         object-fit: cover;
         position: relative;
-    
+
     }
     
     main {
@@ -37,7 +36,6 @@
     .tmdb-info img {
         width: 8rem;
     }
-
 
     h2 {
         padding-top: 5rem;

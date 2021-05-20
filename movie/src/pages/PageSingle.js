@@ -4,7 +4,7 @@ import { useLocation, useParams, Link } from 'react-router-dom';
 import useGlobal from '../globals/globalState';
 import MovieCard from '../components/MovieCard';
 import isFav from '../utilities/isFav';
-import { API_TOKEN } from '../globals/globals';
+import tv from '../images/tv.png';
 
 const PageSingle = () => {
 
@@ -13,8 +13,6 @@ const PageSingle = () => {
     const { id } = useParams();
 
     const [singleMovie, setSingleMovie] = useState(null);
-
-    // const [singleCredit, setSingleCredit] = useState(null);
 
     useEffect(() => {
 
@@ -34,13 +32,20 @@ const PageSingle = () => {
     }, [id]);
 
     function makeCast(arr) {
-        arr = arr.splice(0, 4)
+        arr = arr.slice(0, 4)
         return arr.map(member => { 
             return (
                 <div className="actorCard">
-                    <img className="actor-img" src={`https://image.tmdb.org/t/p/w185/${member.profile_path}`} alt={`${member.name}`}/>
-                    <h3>{member.name}</h3>
-                    <p>{member.character}</p>
+                    {member.profile_path === null ? 
+                        <div className="no-image">
+                            <img className="actor-img" src={tv} alt="No movie poster image available..."/>
+                            <p>No image available...</p>
+                        </div> :
+                        <img className="actor-img" src={`https://image.tmdb.org/t/p/w185/${member.profile_path}`} alt={`${member.name}`}/>
+                    }
+                    
+                    <h2>{member.character}</h2>
+                    <p>{member.name}</p>
                 </div>
             )
          })

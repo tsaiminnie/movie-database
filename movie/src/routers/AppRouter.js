@@ -7,7 +7,6 @@ import PageFav from '../pages/PageFav';
 import PageLogin from '../pages/PageLogin';
 import PageSignUp from '../pages/PageSignUp';
 import PageSingle from '../pages/PageSingle';
-import MovieCard from '../components/MovieCard';
 import Footer from '../components/Footer';
 
 function AppRouter() {
@@ -24,7 +23,6 @@ function AppRouter() {
             <Route path ="/sort/upcoming" exact><PageHome sort='upcoming'/></Route>
             <Route path="/about"><PageAbout/></Route>
             <Route path="/favourites"><PageFav/></Route>
-            {/* <Route path="/my-account"><PageAccount/></Route> */}
             <Route path="/sign-up"><PageSignUp/></Route>            
             <Route path="/sign-in"><PageLogin/></Route> 
             <Route path="/single-page/:id"><PageSingle/></Route>         
