@@ -4,7 +4,7 @@ import { useLocation, useParams, Link } from 'react-router-dom';
 import useGlobal from '../globals/globalState';
 import MovieCard from '../components/MovieCard';
 import isFav from '../utilities/isFav';
-import noPoster from '../images/no-movie-poster.jpg';
+import tv from '../images/tv.png';
 
 const PageSingle = () => {
 
@@ -37,7 +37,10 @@ const PageSingle = () => {
             return (
                 <div className="actorCard">
                     {member.profile_path === null ? 
-                        <img className="actor-img" src={noPoster}     /> :
+                        <div className="no-image">
+                            <img className="actor-img" src={tv} alt="No movie poster image available..."/>
+                            <p>No image available...</p>
+                        </div> :
                         <img className="actor-img" src={`https://image.tmdb.org/t/p/w185/${member.profile_path}`} alt={`${member.name}`}/>
                     }
                     

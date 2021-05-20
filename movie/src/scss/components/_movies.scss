@@ -1,6 +1,5 @@
 @use '../base/settings' as *;
 
-
 .home-section .movies {
 
     img {
@@ -19,8 +18,6 @@
         height: 350px;
     }
 }
-
-
 
 @media (min-width: $mobile) {
 
@@ -92,9 +89,6 @@
     }
 }
 
-
-
-
 //Playing around with having a scroll for the movies
 // @media (min-width: $desktop) {
 //     .movies {
@@ -110,14 +104,6 @@
 // }
 
 
-
-
-
-
-
-
-
-
 // @media (min-width: $tablet) {
 //     .movies {
 //         grid-template-columns: 1fr 1fr 1fr;
@@ -131,6 +117,3 @@
 //     }
 
 // }
-
-
-

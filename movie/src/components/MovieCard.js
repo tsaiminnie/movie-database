@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import FavBtn from './FavBtn';
-import noPoster from '../images/no-movie-poster.jpg';
+import tv from '../images/tv.png';
 
 function MovieCard({className, movie, isFav, trimOverview, cast}) {
 
@@ -55,7 +55,11 @@ function MovieCard({className, movie, isFav, trimOverview, cast}) {
 
                 {movie.poster_path === null ? 
                 
-                    <img className="noPoster-img" src={noPoster}     /> :
+                    <div className="no-image">
+                        <img className="poster-img" src={tv} alt="No movie poster image available..."/>
+                        <p>No image available...</p>
+                    </div> :
+
                     <img className ="poster-img" src={`https://image.tmdb.org/t/p/w780/${movie.poster_path}`} alt={`A poster for the movie ${movie.title}`}/>
                 }
                 

@@ -23,7 +23,6 @@
         transition: ease .8s;
         // display: none;
         
-
         &:hover {
             transition: all ease-in-out .5s;
             background-color: rgba(0, 0, 0, .8);
@@ -67,14 +66,13 @@
         height: 300px;
     }
 
-
-
     h3{
         font-size: 1.2rem;
         font-weight: bold;
     }
 
-   h3, p {
+   h3, 
+   p {
         margin: 0.5rem 1rem;
         text-align: center;
         color: $gold;
