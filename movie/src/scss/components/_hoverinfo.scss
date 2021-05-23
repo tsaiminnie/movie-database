@@ -5,10 +5,6 @@
     transition: ease .5s;
     position: relative;
 
-    &:hover {
-        // transition: ease-in-out 5s;
-        // background-color: rgba(0, 0, 0, .8);
-    }    
 
     .hover-info {
         // transition: ease 5s;
@@ -54,7 +50,8 @@
         }
     }
 
-    &:hover .hover-info {
+    &:hover .hover-info, 
+    &:active .hover-info {
         opacity: 1;
         // background-color: rgba(0, 0, 0, .8);
         display: flex;

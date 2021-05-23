@@ -31,13 +31,15 @@ const PageFav = () => {
                 <div className="ourFavourites"> 
                     <h2>Favourites</h2>
 
+                    <div className="favourites-info">
+
                         {globalState.favs.map((singleMovie, i) => {
                             return <MovieCard   key={i} 
                                                 movie={singleMovie}
                                                 isFav={true} 
                                                 trimOverview={false}/>
                     })}
-
+                    </div>
 				    </div>}
             
         </section>
