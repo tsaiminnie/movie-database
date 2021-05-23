@@ -1,6 +1,8 @@
 @use '../base/settings' as *;
 
-.singleMovie {
+.single-page {
+
+
 
     .page-home p {
        padding: 0;
@@ -112,6 +114,8 @@
 }
 
 .single-page {
+
+
     .overview-title {
         top: 39rem;
         color: $gold;
@@ -168,8 +172,8 @@
             }
 
             p.overview {
-                max-width: 50rem;
-                padding-right: 2rem;
+                // max-width: 50rem;
+                // padding-right: 2rem;
             }
 }
 
@@ -222,7 +226,7 @@
     }
 
     p.overview {
-        padding-right: 15rem;
+        // padding-right: 15rem;
     }
 }
 
