@@ -31,18 +31,20 @@ footer {
     }
 
     .footer-info{
-        font-size: 1rem;
-        width: 100%;
+        // font-size: 1rem;
+        // width: 100%;
+        display: none;
     }
     
-    .community {
-        display:none;
-    }
 
-    @media screen and (min-width: 768px){
-        .community {
+    @media screen and (min-width: 600px){
+
+        .footer-info {
+            font-size: 1rem;
+            width: 100%;
             display: block;
         }
+
     }
 
     @media screen and (min-width: 1024px){

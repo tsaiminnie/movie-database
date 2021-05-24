@@ -94,7 +94,7 @@ body{
   z-index: 2;
   width: 200px; 
   color: #000000;
-  top:25px;
+  top:4rem;
   
   &.right{
     
@@ -112,7 +112,7 @@ body{
       text-decoration: none;
       text-align:left;
       outline: 0;
-      font-size: 0.7rem;
+      font-size: 1rem;
       background: $gold;
       color: #000000;
       width: calc(100% - 20px);
@@ -136,6 +136,7 @@ body{
       }
       .menu-bar {
         width: auto;
+        top: 25px;
       }
 
       .menu-bar.right {
