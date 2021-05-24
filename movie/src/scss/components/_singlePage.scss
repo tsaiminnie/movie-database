@@ -88,7 +88,6 @@
   width: 100%;
   margin-top: 55rem;
   margin-bottom: 5rem;
-//   display: none;
 }
 
 @media screen and (min-width: 820px){
@@ -182,11 +181,6 @@
                     right: 4rem;
                 }
             }
-
-            p.overview {
-                // max-width: 50rem;
-                // padding-right: 2rem;
-            }
 }
 
 @media screen and (min-width: 850px) {
@@ -236,10 +230,6 @@
         .release-date {
             left: 11vw;
         }
-    }
-
-    p.overview {
-        // padding-right: 15rem;
     }
 }
 

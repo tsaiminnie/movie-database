@@ -19,8 +19,6 @@
         margin-bottom: 2rem;
     }
 
-    // display:flex;
-    // flex-direction:column;
     min-height: 100vh;
 
 
@@ -66,17 +64,6 @@
         }
     }
 
-//     .poster-img {
-//         max-width: 15rem;
-//         position: relative;
-//         top: -24rem;
-//     }
-
-//     @media screen and (min-width: 500px){
-//         .poster-img {
-//             top: -21rem;
-//         }
-//     }
     @media screen and (min-width: 960px){
         .poster-img {
             padding-right: 2rem;
@@ -119,13 +106,6 @@
             border: 2px solid $gold; 
         }
     }
-
-//     .poster {
-//         // margin-bottom: 10rem;
-//         padding: 5rem 0;
-//         text-align: center;
-//     }
-// }
 }
 
 .noFavourites {

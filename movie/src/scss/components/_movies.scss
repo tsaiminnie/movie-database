@@ -68,32 +68,3 @@
         gap: 2rem;
     }
 }
-
-//Playing around with having a scroll for the movies
-// @media (min-width: $desktop) {
-//     .movies {
-//         display: flex;
-//         overflow-x: auto;
-//         flex-wrap: nowrap;
-
-//         img{
-//             width: 300px;
-//         }
-//     }
-
-// }
-
-
-// @media (min-width: $tablet) {
-//     .movies {
-//         grid-template-columns: 1fr 1fr 1fr;
-//     }
-
-// }
-
-// @media (min-width: $tabletlg) {
-//     .movies {
-//         grid-template-columns: repeat(3, 1fr);
-//     }
-
-// }
