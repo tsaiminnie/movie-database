@@ -2,7 +2,7 @@
 
 .title {
     color: $gold;
-    top: 10rem;
+    top: 12rem;
     font-family: $pageFont;
     font-size: 10vw;
     position: absolute;
@@ -10,16 +10,24 @@
 }
 
 .slogan {
-    display: none;
+    // display: none;
     color: $gold;
     font-family: $pageFont;
-    font-size: 2rem;
+    font-size: 1.4rem;
     position: absolute;
     left: 4rem;
     top: 30rem;
 
     h2{
         margin: 1rem auto;
+    }
+
+    h2:first-child {
+        opacity: 0.4;
+    }
+
+    h2:nth-child(2){
+        opacity: 0.7;
     }
 }
 
