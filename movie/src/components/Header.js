@@ -1,4 +1,5 @@
 import logo from '../images/logo.png';
+import { NavLink } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import Nav from './Nav';
 
@@ -23,7 +24,8 @@ const Header = () => {
     return (
 
     <header className={navOpen ? 'show': 'closed'}>
-                    <a href="/"><img className="logo" alt='logo' src={logo} /></a>
+        <NavLink to="/" exact><img className="logo" alt='logo' src={logo}/></NavLink>
+        
     
         <div className="menu-wrapper"
            onMouseDown={(e) => { e.preventDefault(); }}

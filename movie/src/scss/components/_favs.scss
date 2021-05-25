@@ -1,6 +1,11 @@
 @use '../base/settings' as *;
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
 
+.favourites-page {
+    padding-bottom: 6rem;
+}
+
+
 .favourites-page .ourFavourites{ 
 
     .page-home {
@@ -23,11 +28,18 @@
 
 
     .poster-img {
-        max-width: 15rem;
-        height: auto;
+        max-width: 300px;
+        height: 310px;
         order: -1;
         justify-content: center;
         
+    }
+
+    @media screen and (min-width: 500px){
+        .poster-img {
+            max-width: 15rem;
+            height: auto;
+        }
     }
 
 

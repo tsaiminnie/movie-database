@@ -1,5 +1,9 @@
 @use '../base/settings' as *;
 
+.home-section {
+    padding-bottom: 5rem;
+}
+
 .title {
     color: $gold;
     top: 12rem;
