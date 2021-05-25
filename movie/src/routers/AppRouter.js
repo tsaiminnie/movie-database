@@ -8,10 +8,11 @@ import PageLogin from '../pages/PageLogin';
 import PageSignUp from '../pages/PageSignUp';
 import PageSingle from '../pages/PageSingle';
 import Footer from '../components/Footer';
+import {APP_FOLDER_NAME} from '../globals/globals';
 
 function AppRouter() {
     return (
-    <Router>
+    <Router basename={APP_FOLDER_NAME}>
       <Header/>
       <main>
         <div className="wrapper"> 

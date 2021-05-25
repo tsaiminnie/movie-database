@@ -2,8 +2,6 @@
 
 .about-page {
 
-    position: relative;
-    min-height: 100vh;
     
     .about-img{
         opacity: 0.2;
@@ -15,9 +13,6 @@
 
     }
     
-    main {
-        overflow-x: hidden;
-    }
     
     @media (min-width: 320px){
         .about-img {
@@ -26,8 +21,9 @@
     }
 
     .about-info {
+        padding-bottom: 8rem;
         position: absolute;
-        top: 13rem;
+        top: 8rem;
         left: 0;
         right: 0;
     }
