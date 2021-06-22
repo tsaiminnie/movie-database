@@ -2,12 +2,8 @@ import { useEffect, useState } from 'react';
 import { pageTitle } from '../globals/globals';
 import { API_TOKEN } from '../globals/globals';
 import ResponsiveBg from '../components/ResponsiveBg';
-import useGlobal from '../globals/globalState';
-import isFav from '../utilities/isFav';
 import Movies from '../components/Movies';
 import SortBar from '../components/SortBar';
-// import LoginBtn from '../components/LoginBtn';
-// import BgArrow from '../components/BgArrow';
 
 const PageHome = ({sort}) => {
 
@@ -25,13 +21,7 @@ const PageHome = ({sort}) => {
         });
         const moviesData = await res.json();
         const first12Movies = moviesData.results.splice(0,12);
-        //console.log(moviesData);
-        //console.log(first12Movies);
         setMoviesData(first12Movies);
-
-        
-        
-       
       }
   
       fetchMovies();
@@ -43,7 +33,6 @@ const PageHome = ({sort}) => {
     return (
         <section className="home-section">
             <ResponsiveBg />
-            {/* <LoginBtn /> */}
             <section className='title'>
                 <h1>DiscoveryFlix</h1>
             </section>
@@ -52,8 +41,7 @@ const PageHome = ({sort}) => {
                 <h2>Dream</h2>
                 <h2>Imagine</h2>
             </section>
-      
-            {/* <BgArrow /> */}
+    
             <SortBar/>
 
             {moviesData !== null && <Movies moviesData={moviesData} />}

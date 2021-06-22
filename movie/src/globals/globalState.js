@@ -1,17 +1,6 @@
 import React from 'react';
 import globalHook from 'use-global-hook';
-import { favStorage, userData } from './globals';
-
-
-function getUser(){
-    let userFromStorage = localStorage.getItem(userData);
-    if(userFromStorage === null){
-        return null;
-    }else{
-        const user = JSON.parse(userFromStorage);
-        return user;
-    }
-}
+import { favStorage } from './globals';
 
 function getFavs() {
     let favsStorage = localStorage.getItem(favStorage);
@@ -46,20 +35,10 @@ const actions = {
 
         store.setState({favs: currentFavs});
     },
-
-    
-     createUser: (store, userObj) => {
-            const userForStorage = JSON.stringify(userObj);
-            localStorage.setItem(userData, userForStorage);
-            store.setState({ user: { 
-                username: userObj.username, 
-                password: userObj.password} 
-            });
-     },
 }
 
 const initialState = {
-    favs: getFavs(), user: getUser()
+    favs: getFavs()
 }
 
 

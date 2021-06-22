@@ -5,21 +5,16 @@ function Footer() {
     return (
         <footer>
             <div className="footer">
-            <NavLink to="/" exact><img className="logo" alt='logo' src={logoBlack}/></NavLink>
+            <NavLink to="/" exact><img className="logo" alt='DiscoveryFlix logo' src={logoBlack}/></NavLink>
 
-                <h3>
-                    About
-                </h3>
-
-                <h3>
-                    Account
-                </h3>
-  
-                <h3>
-                    Contact
-                </h3>
-  
- 
+                <nav className="footerLinks">
+                    <ul>
+                        <li><a><NavLink to="/" exact>Home</NavLink></a></li>
+                        <li><a><NavLink to="/about" exact>About</NavLink></a></li>
+                        <li><a><NavLink to="/favourites" exact>Favourites</NavLink></a></li>
+                    </ul> 
+                </nav>
+                
             </div>
         </footer>
     )

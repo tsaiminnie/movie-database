@@ -4,9 +4,7 @@ import isFav from '../utilities/isFav';
 
 function Movies({moviesData}) {
 
-
     const [globalState] = useGlobal();
-
  
     return (
         <section className='movies'>
