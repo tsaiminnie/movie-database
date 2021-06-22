@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { pageTitle } from '../globals/globals';
-import { useLocation, useParams, Link } from 'react-router-dom';
+import {  useParams, Link } from 'react-router-dom';
 import useGlobal from '../globals/globalState';
 import MovieCard from '../components/MovieCard';
 import isFav from '../utilities/isFav';
@@ -24,7 +23,6 @@ const PageSingle = () => {
         } else {
             setSingleMovie(movieData);
         }
-        console.log(movieData);
       }
   
       fetchMovie();
@@ -38,7 +36,7 @@ const PageSingle = () => {
                 <div className="actorCard">
                     {member.profile_path === null ? 
                         <div className="no-image">
-                            <img className="actor-img" src={tv} alt="No movie poster image available..."/>
+                            <img className="actor-img" src={tv} alt="No actor profile image available..."/>
                             <p>No image available...</p>
                         </div> :
                         <img className="actor-img" src={`https://image.tmdb.org/t/p/w185/${member.profile_path}`} alt={`${member.name}`}/>
@@ -64,8 +62,6 @@ const PageSingle = () => {
                                 isFav={isFav(globalState.favs, null, singleMovie.id)}
                                 trimOverview={false}/>
                             </div> }
-        <p className="release-date singlePageInfo">Release Date:</p> 
-        <p className="overview-title singlePageInfo">Overview:</p>   
         
         {singleMovie && <div className="main-cast">
                             {makeCast(singleMovie.credits.cast)}

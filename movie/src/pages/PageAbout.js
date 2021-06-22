@@ -36,7 +36,7 @@ const PageAbout = () => {
 
             <div className="tmdb-info">
             <p>DiscoveryFlix uses the TMDb API but is not endorsed or certified by TMDb.</p>
-            <img className="tmdb-logo" src={tmdbLogo} />
+            <img className="tmdb-logo" src={tmdbLogo} alt="TMDB logo" />
             </div>
             </section>
         </section>

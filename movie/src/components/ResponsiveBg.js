@@ -3,8 +3,6 @@ import mediumChaosWalking from '../images/chaos-walking800.png';
 import largeChaosWalking from '../images/chaos-walking1200.png';
 import xlargeChaosWalking from '../images/chaos-walking1920.png';
 
-
-
 function ResponsiveBg() {
 
 

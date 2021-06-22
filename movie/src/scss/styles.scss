@@ -1,4 +1,4 @@
-//Reset
+//Base
 @use './base/reset';
 @use './base/default';
 @use './base/settings';
@@ -13,12 +13,8 @@
 @use './components/about';
 @use './components/hoverinfo';
 @use './components/singlePage';
-// @use './components/login';
-@use './components/update';
 @use './components/favs';
 @use './components/footer';
-
-//Utilities
 
 
 

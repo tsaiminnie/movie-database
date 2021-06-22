@@ -5,21 +5,9 @@ function SortBar() {
 
     const [redirect, setRedirect] = useState(false);
 
-    // function isDesktop(e){
-    //     if(e.matches){
-    //         .select-form;
-    //     }
-
     function handleChange(e){
         setRedirect(e.target.value);
     }
-
-    // useEffect(() => {
-    //     let mq= window.matchMedia('(min-width: 770px)');
-    //     mq.addListener(isDesktop)
-    //     return()=> mq.removeListener(isDesktop);
-    // }, []);
-
 
     return (
         <section className='sort'>
@@ -41,9 +29,6 @@ function SortBar() {
                     </select>
                 </form>
 
-                {/* <form className='nav-form'>
-
-                </form> */}
         </section>
     );
 }

@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import Nav from './Nav';
 
-
 const Header = () => {
 
     const [navOpen, setNavOpen] = useState(false);
@@ -24,7 +23,7 @@ const Header = () => {
     return (
 
     <header className={navOpen ? 'show': 'closed'}>
-        <NavLink to="/" exact><img className="logo" alt='logo' src={logo}/></NavLink>
+        <NavLink to="/" exact><img className="logo" alt='DiscoveryFlix logo' src={logo}/></NavLink>
         
     
         <div className="menu-wrapper"
@@ -34,16 +33,11 @@ const Header = () => {
             <div className={ navOpen ? "hamburger-menu animate" : "hamburger-menu"}></div>	  
         </div>
     
-        
-
         <Nav handleShowHideNav={showHideNav} navOpen={navOpen} />
     </header>
-
-    
-            
+         
   );
 
 };
-
 
 export default Header;

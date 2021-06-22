@@ -38,7 +38,6 @@ body{
     height: 7px;
     width: 50px;
     background: #fff;
-    /*Center according to top menu and height of middle bar*/
     top: calc(70px / 2 - 5px); 
     cursor: pointer;
     &:before{
@@ -88,7 +87,7 @@ body{
   }
 }
 .menu-bar{
-  position: absolute;
+  position: fixed;
   right: 0;
   z-index: 2;
   width: 200px; 
@@ -103,9 +102,11 @@ body{
   &.is-active{
     transform: translateX(0);
     transition: transform ease .3s;
+    position: absolute;
   }
   
   .menu-body{
+    position: relative;
        
     a{
       text-decoration: none;
@@ -136,6 +137,7 @@ body{
       .menu-bar {
         width: auto;
         top: 25px;
+        position: absolute;
       }
 
       .menu-bar.right {
